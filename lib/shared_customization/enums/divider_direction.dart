@@ -1,0 +1,1 @@
+enum DividerDirection { vertical, horizontal }

@@ -1,0 +1,274 @@
+{
+  "CommonAction": {
+    "Close": "Đóng",
+    "Confirm": "Xác nhận",
+    "Cancel": "Hủy",
+    "Skip": "Bỏ qua",
+    "Back": "Quay lại",
+    "Continue": "Tiếp tục",
+    "Delete": "Xóa",
+    "Edit": "Chỉnh sửa",
+    "Update": "Cập nhật",
+    "Resend": "Gửi lại",
+    "Submit": "Đồng ý",
+    "Copy": "Sao chép",
+    "Copied": "Đã sao chép",
+    "CopyLink": "Sao chép liên kết",
+    "Search": "Tìm kiếm",
+    "Sending": "Đang gửi",
+    "EnterText": "Nhập văn bản",
+    "Dismiss": "Loại bỏ",
+    "ViewDetail": "Xem chi tiết",
+    "Add": "Thêm",
+    "Download": "Tải xuống",
+
+    "Login": "Đăng nhập",
+    "Register": "Đăng ký",
+    "Logout": "Đăng xuất",
+    "ShowMore": "Xem thêm",
+    "ShowLess": "Thu gọn"
+  },
+
+  "CommonData": {
+    "Menu": "Menu",
+    "Account": "Tài khoản",
+    "Setting": "Cài đặt",
+    "Email": "Địa chỉ email",
+    "Password": "Mật khẩu",
+    "NotUpdate": "Chưa cập nhật",
+    "Today": "Hôm nay",
+    "Yesterday": "Hôm qua",
+    "Now": "Vừa xong",
+    "Minute": "{} phút",
+    "Hour": "{} giờ",
+    "Day": "{} ngày",
+    "Week": "{} tuần",
+    "Month": "{} tháng",
+    "Year": "{} năm",
+    "TimeToday": "{} hôm nay",
+    "TimeYesterday": "{} hôm qua",
+    "To": "Đến: {}",
+    "Error": "Lỗi",
+    "UploadAFile": "Tải lên một tài liệu",
+    "SelectImageOrVideo": "Chọn ảnh hoặc video",
+    "TakeAPhoto": "Chụp bằng máy ảnh",
+    "UploadFrom": "Chọn nguồn tải lên",
+    "LoadingMore": "Đang tải",
+    "JapanCurrency": "Yên",
+    "Gallery": "Bộ sưu tập",
+    "GetBackWithoutSaveConfirm": "Dữ liệu hiện tại chưa được lưu. Bạn có muốn tiếp tục?",
+    "ListDataIsEmpty": "Chưa có dữ liệu",
+    "HasErrorOccurr": "Đã có lỗi xảy ra",
+    "CantLoadData": "Không thể tải dữ liệu",
+    "PleaseFillFullInfo": "Vui lòng điền đầy đủ thông tin!",
+    "About": "Về",
+    "FeaturePending": "Tính năng này đang được phát triển",
+    "Currency": "VNĐ",
+    "Male": "Nam",
+    "Female": "Nữ",
+    "OtherGender": "Giới tính khác"
+  },
+
+  "CommonNotiAction": {
+    "Success": "Thành công",
+    "YourActionMakingSuccessfully": "Hành động của bạn đã thực hiện thành công!",
+    "Failed": "Thất bại",
+    "YourActionMakingFailed": "Hành động của bạn đã thực hiện không thành công!",
+    "DownloadFile": "Bạn có chắc chắn muốn tải tệp này xuống không?",
+    "DownloadFileSuccessfully": "Tải tệp ({filename}) thành công!"
+  },
+
+  "CommonValidation": {
+    "InvalidEmailFormat": "Định dạng email không đúng.",
+    "EmailAlreadyInUse": "Địa chỉ email này đã được sử dụng.",
+    "InvalidPasswordFormat": "Mật khẩu của bạn phải chứa ít nhất 8 ký tự, 1 ký tự số, 1 chữ cái viết hoa, 1 chữ cái viết thường.",
+    "PasswordConfirmationNotMatch": "Xác nhận mật khẩu không khớp.",
+    "NewPasswordConfirmationNotMatch": "Xác nhận mật khẩu mới không khớp.",
+    "NewPasswordCanNotSameOldPassword": "Mật khẩu mới không được trùng với mật khẩu cũ.",
+    "MaxLength": "{fieldName} không được quá {value} ký tự.",
+    "MinLength": "{fieldName} phải chứa ít nhất {value} ký tự.",
+    "MaxValue": "{fieldName} không được vượt quá {value}.",
+    "MinValue": "{fieldName} không được nhỏ hơn {value}.",
+    "Required": "{fieldName} là bắt buộc.",
+    "CommonRequired": "Trường dữ liệu này là bắt buộc.",
+    "FieldInvalidate": "{fieldName} không đúng định dạng.",
+    "OnlyNumberAllow": "{fieldName} chỉ được nhập số.",
+    "DateTimeFormatIsInvalid": "Dữ liệu nhập vào chưa đúng định dạng ngày tháng.",
+    "PleaseChooseDifferenceImage": "Vui lòng không chọn hình ảnh trùng lặp",
+    "FileSizeMustLessThan10MB": "Dung lượng tệp không được quá 10Mb.",
+    "ListFileHasOneOrMoreFileSizeBiggerThan10MB": "Danh sách tệp mà bạn chọn có chứa 1 hoặc nhiều tệp có kích thước lớn hơn 10Mb, các tệp này sẽ bị xóa.",
+    "ImageSizeMustLessThan10MB": "Kích cỡ hình ảnh không được quá 10Mb.",
+    "TotalFileSizeMustLessThan10MB": "Tổng dung lượng tệp không được quá 10Mb.",
+    "TotalImageSizeMustLessThan10MB": "Tổng dung lượng hình ảnh không được quá 10Mb."
+  },
+
+  "Login": {
+    "AppName": "",
+    "Email": "Địa chỉ email",
+    "InputEmail": "Nhập địa chỉ email của bạn",
+    "Password": "Mật khẩu",
+    "InputPassword": "Nhập mật khẩu",
+    "KeepLogin": "Ghi nhớ đăng nhập",
+    "ForgotPassword": "Quên mật khẩu?",
+    "Login": "Đăng nhập",
+    "NotHaveAccount": "Bạn chưa có tài khoản?",
+    "Register": "Đăng ký tại đây",
+    "Contact": "Liên hệ",
+    "EULA": "Thỏa thuận cấp phép người dùng cuối",
+    "AccountNotActive": "Tài khoản của bạn chưa được kích hoạt",
+    "ActiveAccountSuccessTitle": "Kích hoạt thành công",
+    "ActiveAccountSuccessContent": "Tài khoản của bạn đã được kích hoạt thành công. Vui lòng đăng nhập để tiếp tục trải nghiệm hệ thống.",
+    "LoginByAdminAccount": "Tài khoản của bạn là tài khoản Admin và chỉ có thể đăng nhập được trên website",
+    "LoginFailedTitle": "Đăng nhập không thành công",
+    "AccountAlreadyActivated": "Tài khoản của bạn đã được kích hoạt.",
+    "SessionTimeOutTitle": "Hết phiên đăng nhập",
+    "SessionTimeOutContent": "Phiên đăng nhập của bạn đã hết hạn. Vui lòng đăng nhập lại để tiếp tục sử dụng hệ thống hoặc liên hệ với chúng tôi nếu có lỗi.",
+    "LoginErrorTitle": "Lỗi",
+    "LoginDescription": "Đồng ý với {privacy_policy} & {term_of_service} của chúng tôi"
+  },
+
+  "Register": {
+    "Register": "Đăng ký",
+    "Submit": "Đăng ký",
+    "Name": "Họ và tên",
+    "NamePlaceHolder": "Vui lòng nhập họ và tên",
+    "Email": "Địa chỉ email",
+    "EmailPlaceHolder": "Vui lòng nhập địa chỉ email",
+    "Password": "Mật khẩu",
+    "PasswordPlaceHolder": "Vui lòng nhập mật khẩu",
+    "ConfirmPassword": "Xác nhận mật khẩu",
+    "ConfirmPasswordPlaceHolder": "Vui lòng nhập xác nhận mật khẩu",
+    "DoYouHaveAccount": "Bạn đã có tài khoản?",
+    "LoginHere": "Đăng nhập tại đây",
+    "CheckYourEmailTitle": "Kiểm tra hộp thư của bạn",
+    "CheckYourEmailContent": "Một email xác thực vừa gửi tới {email}. Hãy kiểm tra hộp thư đến và nhấp vào liên kết để hoàn thành đăng ký tài khoản của bạn.",
+    "CheckSpamContent": "Nếu không tìm thấy email, hãy kiểm tra hộp thư spam hoặc bấm gửi lại",
+    "Resend": "Gửi lại",
+    "GoBack": "Quay về trang chủ",
+    "ResendAfter30Seconds": "Gửi lại sau 30s",
+    "RegisterSuccessTitle": "Thành công",
+    "RegisterSuccessContent": "Đã đăng ký tài khoản thành công. Vui lòng kiểm tra hộp thư đến hoặc thư rác trong email để xác thực tài khoản và bắt đầu sử dụng hệ thống."
+  },
+
+  "ResetPassword": {
+    "ForgotPassword": "Quên mật khẩu",
+    "ResetPassword": "Đặt lại mật khẩu",
+    "EmailAddress": "Địa chỉ email",
+    "EmailPlaceHolder": "Nhập địa chỉ email",
+    "ResetPasswordSuccessTitle": "Thành công",
+    "ResetPasswordSuccessContent": "Vui lòng kiểm tra hộp thư đến hoặc thư rác trong email."
+  },
+
+  "ChangePassword": {
+    "ChangePassword": "Đổi mật khẩu",
+    "CurrentPassword": "Mật khẩu hiện tại",
+    "CurrentPasswordPlaceHolder": "Nhập mật khẩu hiện tại",
+    "NewPassword": "Mật khẩu mới",
+    "NewPasswordPlaceHolder": "Nhập mật khẩu mới",
+    "NewConfirmPassword": "Xác nhận mật khẩu mới",
+    "NewConfirmPasswordPlaceHolder": "Nhập lại mật khẩu mới",
+    "KeepLoginConfirmTitle": "Đã đổi mật khẩu",
+    "KeepLoginConfirm": "Bạn có muốn duy trì đăng nhập trên các thiết bị khác hay không?",
+    "LogoutAllDevices": "Đăng xuất khỏi toàn bộ thiết bị mà bạn đang đăng nhập tài khoản này.",
+    "KeepLogin": "Duy trì đăng nhập.",
+    "Submit": "Xác nhận",
+    "ChangePasswordSuccessTitle": "Mật khẩu đã được thay đổi",
+    "ChangePasswordSuccessContent": "Bạn đã thay đổi mật khẩu thành công. Vui lòng đăng nhập để tiếp tục sử dụng hệ thống"
+  },
+
+  "ConfirmForgotPassword": {
+    "ResetPassword": "Khôi phục mật khẩu",
+    "NewPassword": "Mật khẩu mới",
+    "NewPasswordPlaceHolder": "Nhập mật khẩu mới",
+    "NewConfirmPassword": "Xác nhận mật khẩu mới",
+    "NewConfirmPasswordPlaceHolder": "Nhập lại mật khẩu mới",
+    "Update": "Xác nhận thay đổi",
+    "ResetPasswordSuccessTitle": "Thành công",
+    "ResetPasswordSuccessContent": "Mật khẩu đã được thay đổi thành công. Vui lòng đăng nhập lại để sử dụng hệ thống.",
+    "ResetPasswordFailureTitle": "Lỗi",
+    "ResetPasswordFailureContent": "Đặt lại mật khẩu không thành công."
+  },
+
+  "ResendEmail": {
+    "EmailSentDescription1": "Một email xác nhận đã được gửi đến {email}. Nhấp vào liên kết để hoàn thành đăng ký tài khoản của bạn.",
+    "EmailSentDescription2": "Nếu bạn không nhận được email xác nhận hoặc bạn làm mất nó, vui lòng gửi lại email bên dưới.",
+    "EmailSent": "Đã gửi email xác nhận",
+    "ResendEmail": "Gửi lại email",
+    "PleaseRequestAfter30Seconds": "Vui lòng gửi lại sau {time} giây",
+    "GetBackHome": "Quay về trang chủ",
+    "ResendEmailFailed": "Gửi lại email thất bại",
+    "ConfirmEmail": "Xác nhận email",
+    "ResendEmailSuccessfully": "Đã gửi email thành công"
+  },
+
+  "LandingPage": {
+    "LandingPage": "LandingPage"
+  },
+
+  "MainTab": {
+    "MainTab": "MainTab"
+  },
+
+  "Notification": {
+    "Notification": "Notification"
+  },
+
+  "DeleteAccount": {
+    "DeleteAccount": "DeleteAccount"
+  },
+
+  "Placeholder": {
+    "InputFieldPlaceholder": "Nhập {fieldName}",
+    "SelectFieldPlaceholder": "Lựa chọn {fieldName}",
+    "DateTimeFieldPlaceholder": "Chọn ngày",
+    "SearchPlaceHolder": "Tìm kiếm {fieldName}",
+    "UploadFilePlaceHolder": "Chọn tệp"
+  },
+
+  "Permission": {
+    "NotAnyVisibleCamera": "Không có máy ảnh nào khả dụng",
+    "PleaseAcceptCameraPermission": "Vui lòng cho phép quyền truy cập vào camera của thiết bị",
+    "CameraPermissionPurpose": "Ứng dụng dùng camera của thiết bị để chụp ảnh",
+    "No": "Không",
+    "Yes": "Đồng ý",
+    "GalleryPermissionPurpose": "Ứng dụng sử dụng ảnh trong thư viện",
+    "CanNotAccessGalleryPermission": "Không thể truy cập thư viện ảnh vì quyền truy cập bị từ chối",
+    "PleaseAccessGalleryPermission": "Vui lòng cho phép quyền truy cập vào thư viện ảnh"
+  },
+
+  "LostConnection": {
+    "LostConnection": "Mất kết nối",
+    "PleaseCheckConnection": "Vui lòng kiểm tra kết nối mạng của bạn hoặc thử lại.",
+    "Retry": "Kết nối lại"
+  },
+
+  "TermOfService": {
+    "TermOfService": "Điều khoản"
+  },
+
+  "PrivacyPolicy": {
+    "PrivacyPolicy": "Chính sách bảo mật"
+  },
+
+  "SystemError": {
+    "SystemErrorTitle": "Xin lỗi",
+    "SystemErrorContent": "Hệ thống đang bảo trì."
+  },
+
+  "AppUpdate": {
+    "NewUpdateIsAvailable": "Đã có bản cập nhật mới",
+    "ThisVerionIsNotSupported": "Phiên bản hiện tại của ứng dụng này không còn được hỗ trợ.",
+    "Update": "Cập nhật",
+    "UpdateDescription": "Chúng tôi đã thêm nhiều tính năng và sửa một số lỗi để giúp trải nghiệm của bạn mượt mà nhất có thể.",
+    "Skip": "Bỏ qua"
+  },
+
+  "Error": {
+    "UnexpectedError": "Một lỗi không mong muốn đã xảy ra.",
+    "SendTimeoutError": "Đã xảy ra lỗi thời gian chờ truyền khi kết nối với máy chủ API.",
+    "ConnectionTimeoutError": "Hết thời gian kết nối với máy chủ API.",
+    "CancalledApiError": "Yêu cầu tới máy chủ API đã bị hủy.",
+    "ConnectionError": "Kết nối với máy chủ API không thành công do kết nối Internet.",
+    "ReceiveTimeoutError": "Lỗi nhận thời gian chờ khi kết nối với máy chủ API."
+  }
+}
