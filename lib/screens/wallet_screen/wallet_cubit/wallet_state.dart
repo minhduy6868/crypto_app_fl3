@@ -9,6 +9,7 @@ class WalletState with _$WalletState, BlocBaseState {
     String? privateKey,
     EthereumAddress? publicKey,
     double? balance,
+    double? availableBalance, // New field for available balance
     List<dynamic>? transactions,
   }) = _Initial;
 }

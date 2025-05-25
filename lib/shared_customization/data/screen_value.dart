@@ -8,13 +8,23 @@ class ScreenValue {
 
   ScreenValue({required this.status, this.data, this.action});
 
-  factory ScreenValue.success(
-          {dynamic data, InAppNotificationActions? action}) =>
+  factory ScreenValue.success({
+    dynamic data,
+    InAppNotificationActions? action,
+  }) =>
       ScreenValue(status: ScreenStatus.success, data: data, action: action);
 
-  factory ScreenValue.failed(
-          {dynamic data, InAppNotificationActions? action}) =>
+  factory ScreenValue.failed({
+    dynamic data,
+    InAppNotificationActions? action,
+  }) =>
       ScreenValue(status: ScreenStatus.failed, data: data, action: action);
+
+  factory ScreenValue.loading({
+    dynamic data,
+    InAppNotificationActions? action,
+  }) =>
+      ScreenValue(status: ScreenStatus.running, data: data, action: action);
 
   ScreenValue copyWith({
     ScreenStatus? status,
@@ -22,7 +32,8 @@ class ScreenValue {
     InAppNotificationActions? action,
   }) =>
       ScreenValue(
-          status: status ?? this.status,
-          data: data ?? this.data,
-          action: action ?? this.action);
+        status: status ?? this.status,
+        data: data ?? this.data,
+        action: action ?? this.action,
+      );
 }

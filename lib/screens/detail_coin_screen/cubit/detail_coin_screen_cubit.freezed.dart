@@ -20,24 +20,50 @@ mixin _$DetailCoinScreenState {
   ScreenValue? get status => throw _privateConstructorUsedError;
   CoinMarket? get coins => throw _privateConstructorUsedError;
   List<Chart>? get chartData => throw _privateConstructorUsedError;
+  bool? get isLoadingAI => throw _privateConstructorUsedError;
+  String? get aiPrediction => throw _privateConstructorUsedError;
+  int get selectedDays =>
+      throw _privateConstructorUsedError; // Thêm trường selectedDays
+  bool get isDescriptionExpanded => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String? errorMessage, ScreenValue? status,
-            CoinMarket? coins, List<Chart>? chartData)
+    required TResult Function(
+            String? errorMessage,
+            ScreenValue? status,
+            CoinMarket? coins,
+            List<Chart>? chartData,
+            bool? isLoadingAI,
+            String? aiPrediction,
+            int selectedDays,
+            bool isDescriptionExpanded)
         initial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String? errorMessage, ScreenValue? status,
-            CoinMarket? coins, List<Chart>? chartData)?
+    TResult? Function(
+            String? errorMessage,
+            ScreenValue? status,
+            CoinMarket? coins,
+            List<Chart>? chartData,
+            bool? isLoadingAI,
+            String? aiPrediction,
+            int selectedDays,
+            bool isDescriptionExpanded)?
         initial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String? errorMessage, ScreenValue? status,
-            CoinMarket? coins, List<Chart>? chartData)?
+    TResult Function(
+            String? errorMessage,
+            ScreenValue? status,
+            CoinMarket? coins,
+            List<Chart>? chartData,
+            bool? isLoadingAI,
+            String? aiPrediction,
+            int selectedDays,
+            bool isDescriptionExpanded)?
         initial,
     required TResult orElse(),
   }) =>
@@ -76,7 +102,11 @@ abstract class $DetailCoinScreenStateCopyWith<$Res> {
       {String? errorMessage,
       ScreenValue? status,
       CoinMarket? coins,
-      List<Chart>? chartData});
+      List<Chart>? chartData,
+      bool? isLoadingAI,
+      String? aiPrediction,
+      int selectedDays,
+      bool isDescriptionExpanded});
 
   $CoinMarketCopyWith<$Res>? get coins;
 }
@@ -101,6 +131,10 @@ class _$DetailCoinScreenStateCopyWithImpl<$Res,
     Object? status = freezed,
     Object? coins = freezed,
     Object? chartData = freezed,
+    Object? isLoadingAI = freezed,
+    Object? aiPrediction = freezed,
+    Object? selectedDays = null,
+    Object? isDescriptionExpanded = null,
   }) {
     return _then(_value.copyWith(
       errorMessage: freezed == errorMessage
@@ -119,6 +153,22 @@ class _$DetailCoinScreenStateCopyWithImpl<$Res,
           ? _value.chartData
           : chartData // ignore: cast_nullable_to_non_nullable
               as List<Chart>?,
+      isLoadingAI: freezed == isLoadingAI
+          ? _value.isLoadingAI
+          : isLoadingAI // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      aiPrediction: freezed == aiPrediction
+          ? _value.aiPrediction
+          : aiPrediction // ignore: cast_nullable_to_non_nullable
+              as String?,
+      selectedDays: null == selectedDays
+          ? _value.selectedDays
+          : selectedDays // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDescriptionExpanded: null == isDescriptionExpanded
+          ? _value.isDescriptionExpanded
+          : isDescriptionExpanded // ignore: cast_nullable_to_non_nullable
+              as bool,
     ) as $Val);
   }
 
@@ -149,7 +199,11 @@ abstract class _$$InitialImplCopyWith<$Res>
       {String? errorMessage,
       ScreenValue? status,
       CoinMarket? coins,
-      List<Chart>? chartData});
+      List<Chart>? chartData,
+      bool? isLoadingAI,
+      String? aiPrediction,
+      int selectedDays,
+      bool isDescriptionExpanded});
 
   @override
   $CoinMarketCopyWith<$Res>? get coins;
@@ -172,6 +226,10 @@ class __$$InitialImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? coins = freezed,
     Object? chartData = freezed,
+    Object? isLoadingAI = freezed,
+    Object? aiPrediction = freezed,
+    Object? selectedDays = null,
+    Object? isDescriptionExpanded = null,
   }) {
     return _then(_$InitialImpl(
       errorMessage: freezed == errorMessage
@@ -190,6 +248,22 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value._chartData
           : chartData // ignore: cast_nullable_to_non_nullable
               as List<Chart>?,
+      isLoadingAI: freezed == isLoadingAI
+          ? _value.isLoadingAI
+          : isLoadingAI // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      aiPrediction: freezed == aiPrediction
+          ? _value.aiPrediction
+          : aiPrediction // ignore: cast_nullable_to_non_nullable
+              as String?,
+      selectedDays: null == selectedDays
+          ? _value.selectedDays
+          : selectedDays // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDescriptionExpanded: null == isDescriptionExpanded
+          ? _value.isDescriptionExpanded
+          : isDescriptionExpanded // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -201,7 +275,11 @@ class _$InitialImpl implements _Initial {
       {this.errorMessage,
       this.status,
       this.coins,
-      final List<Chart>? chartData})
+      final List<Chart>? chartData,
+      this.isLoadingAI,
+      this.aiPrediction,
+      this.selectedDays = 1,
+      this.isDescriptionExpanded = false})
       : _chartData = chartData;
 
   @override
@@ -221,8 +299,20 @@ class _$InitialImpl implements _Initial {
   }
 
   @override
+  final bool? isLoadingAI;
+  @override
+  final String? aiPrediction;
+  @override
+  @JsonKey()
+  final int selectedDays;
+// Thêm trường selectedDays
+  @override
+  @JsonKey()
+  final bool isDescriptionExpanded;
+
+  @override
   String toString() {
-    return 'DetailCoinScreenState.initial(errorMessage: $errorMessage, status: $status, coins: $coins, chartData: $chartData)';
+    return 'DetailCoinScreenState.initial(errorMessage: $errorMessage, status: $status, coins: $coins, chartData: $chartData, isLoadingAI: $isLoadingAI, aiPrediction: $aiPrediction, selectedDays: $selectedDays, isDescriptionExpanded: $isDescriptionExpanded)';
   }
 
   @override
@@ -235,12 +325,28 @@ class _$InitialImpl implements _Initial {
             (identical(other.status, status) || other.status == status) &&
             (identical(other.coins, coins) || other.coins == coins) &&
             const DeepCollectionEquality()
-                .equals(other._chartData, _chartData));
+                .equals(other._chartData, _chartData) &&
+            (identical(other.isLoadingAI, isLoadingAI) ||
+                other.isLoadingAI == isLoadingAI) &&
+            (identical(other.aiPrediction, aiPrediction) ||
+                other.aiPrediction == aiPrediction) &&
+            (identical(other.selectedDays, selectedDays) ||
+                other.selectedDays == selectedDays) &&
+            (identical(other.isDescriptionExpanded, isDescriptionExpanded) ||
+                other.isDescriptionExpanded == isDescriptionExpanded));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, errorMessage, status, coins,
-      const DeepCollectionEquality().hash(_chartData));
+  int get hashCode => Object.hash(
+      runtimeType,
+      errorMessage,
+      status,
+      coins,
+      const DeepCollectionEquality().hash(_chartData),
+      isLoadingAI,
+      aiPrediction,
+      selectedDays,
+      isDescriptionExpanded);
 
   /// Create a copy of DetailCoinScreenState
   /// with the given fields replaced by the non-null parameter values.
@@ -253,33 +359,57 @@ class _$InitialImpl implements _Initial {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(String? errorMessage, ScreenValue? status,
-            CoinMarket? coins, List<Chart>? chartData)
+    required TResult Function(
+            String? errorMessage,
+            ScreenValue? status,
+            CoinMarket? coins,
+            List<Chart>? chartData,
+            bool? isLoadingAI,
+            String? aiPrediction,
+            int selectedDays,
+            bool isDescriptionExpanded)
         initial,
   }) {
-    return initial(errorMessage, status, coins, chartData);
+    return initial(errorMessage, status, coins, chartData, isLoadingAI,
+        aiPrediction, selectedDays, isDescriptionExpanded);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String? errorMessage, ScreenValue? status,
-            CoinMarket? coins, List<Chart>? chartData)?
+    TResult? Function(
+            String? errorMessage,
+            ScreenValue? status,
+            CoinMarket? coins,
+            List<Chart>? chartData,
+            bool? isLoadingAI,
+            String? aiPrediction,
+            int selectedDays,
+            bool isDescriptionExpanded)?
         initial,
   }) {
-    return initial?.call(errorMessage, status, coins, chartData);
+    return initial?.call(errorMessage, status, coins, chartData, isLoadingAI,
+        aiPrediction, selectedDays, isDescriptionExpanded);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String? errorMessage, ScreenValue? status,
-            CoinMarket? coins, List<Chart>? chartData)?
+    TResult Function(
+            String? errorMessage,
+            ScreenValue? status,
+            CoinMarket? coins,
+            List<Chart>? chartData,
+            bool? isLoadingAI,
+            String? aiPrediction,
+            int selectedDays,
+            bool isDescriptionExpanded)?
         initial,
     required TResult orElse(),
   }) {
     if (initial != null) {
-      return initial(errorMessage, status, coins, chartData);
+      return initial(errorMessage, status, coins, chartData, isLoadingAI,
+          aiPrediction, selectedDays, isDescriptionExpanded);
     }
     return orElse();
   }
@@ -318,7 +448,11 @@ abstract class _Initial implements DetailCoinScreenState {
       {final String? errorMessage,
       final ScreenValue? status,
       final CoinMarket? coins,
-      final List<Chart>? chartData}) = _$InitialImpl;
+      final List<Chart>? chartData,
+      final bool? isLoadingAI,
+      final String? aiPrediction,
+      final int selectedDays,
+      final bool isDescriptionExpanded}) = _$InitialImpl;
 
   @override
   String? get errorMessage;
@@ -328,6 +462,14 @@ abstract class _Initial implements DetailCoinScreenState {
   CoinMarket? get coins;
   @override
   List<Chart>? get chartData;
+  @override
+  bool? get isLoadingAI;
+  @override
+  String? get aiPrediction;
+  @override
+  int get selectedDays; // Thêm trường selectedDays
+  @override
+  bool get isDescriptionExpanded;
 
   /// Create a copy of DetailCoinScreenState
   /// with the given fields replaced by the non-null parameter values.

@@ -22,6 +22,8 @@ mixin _$WalletState {
   String? get privateKey => throw _privateConstructorUsedError;
   EthereumAddress? get publicKey => throw _privateConstructorUsedError;
   double? get balance => throw _privateConstructorUsedError;
+  double? get availableBalance =>
+      throw _privateConstructorUsedError; // New field for available balance
   List<dynamic>? get transactions => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
@@ -32,6 +34,7 @@ mixin _$WalletState {
             String? privateKey,
             EthereumAddress? publicKey,
             double? balance,
+            double? availableBalance,
             List<dynamic>? transactions)
         initial,
   }) =>
@@ -45,6 +48,7 @@ mixin _$WalletState {
             String? privateKey,
             EthereumAddress? publicKey,
             double? balance,
+            double? availableBalance,
             List<dynamic>? transactions)?
         initial,
   }) =>
@@ -58,6 +62,7 @@ mixin _$WalletState {
             String? privateKey,
             EthereumAddress? publicKey,
             double? balance,
+            double? availableBalance,
             List<dynamic>? transactions)?
         initial,
     required TResult orElse(),
@@ -100,6 +105,7 @@ abstract class $WalletStateCopyWith<$Res> {
       String? privateKey,
       EthereumAddress? publicKey,
       double? balance,
+      double? availableBalance,
       List<dynamic>? transactions});
 }
 
@@ -124,6 +130,7 @@ class _$WalletStateCopyWithImpl<$Res, $Val extends WalletState>
     Object? privateKey = freezed,
     Object? publicKey = freezed,
     Object? balance = freezed,
+    Object? availableBalance = freezed,
     Object? transactions = freezed,
   }) {
     return _then(_value.copyWith(
@@ -151,6 +158,10 @@ class _$WalletStateCopyWithImpl<$Res, $Val extends WalletState>
           ? _value.balance
           : balance // ignore: cast_nullable_to_non_nullable
               as double?,
+      availableBalance: freezed == availableBalance
+          ? _value.availableBalance
+          : availableBalance // ignore: cast_nullable_to_non_nullable
+              as double?,
       transactions: freezed == transactions
           ? _value.transactions
           : transactions // ignore: cast_nullable_to_non_nullable
@@ -174,6 +185,7 @@ abstract class _$$InitialImplCopyWith<$Res>
       String? privateKey,
       EthereumAddress? publicKey,
       double? balance,
+      double? availableBalance,
       List<dynamic>? transactions});
 }
 
@@ -196,6 +208,7 @@ class __$$InitialImplCopyWithImpl<$Res>
     Object? privateKey = freezed,
     Object? publicKey = freezed,
     Object? balance = freezed,
+    Object? availableBalance = freezed,
     Object? transactions = freezed,
   }) {
     return _then(_$InitialImpl(
@@ -223,6 +236,10 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value.balance
           : balance // ignore: cast_nullable_to_non_nullable
               as double?,
+      availableBalance: freezed == availableBalance
+          ? _value.availableBalance
+          : availableBalance // ignore: cast_nullable_to_non_nullable
+              as double?,
       transactions: freezed == transactions
           ? _value._transactions
           : transactions // ignore: cast_nullable_to_non_nullable
@@ -241,6 +258,7 @@ class _$InitialImpl implements _Initial {
       this.privateKey,
       this.publicKey,
       this.balance,
+      this.availableBalance,
       final List<dynamic>? transactions})
       : _transactions = transactions;
 
@@ -256,7 +274,11 @@ class _$InitialImpl implements _Initial {
   final EthereumAddress? publicKey;
   @override
   final double? balance;
+  @override
+  final double? availableBalance;
+// New field for available balance
   final List<dynamic>? _transactions;
+// New field for available balance
   @override
   List<dynamic>? get transactions {
     final value = _transactions;
@@ -268,7 +290,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'WalletState.initial(errorMessage: $errorMessage, status: $status, mnemonic: $mnemonic, privateKey: $privateKey, publicKey: $publicKey, balance: $balance, transactions: $transactions)';
+    return 'WalletState.initial(errorMessage: $errorMessage, status: $status, mnemonic: $mnemonic, privateKey: $privateKey, publicKey: $publicKey, balance: $balance, availableBalance: $availableBalance, transactions: $transactions)';
   }
 
   @override
@@ -286,6 +308,8 @@ class _$InitialImpl implements _Initial {
             (identical(other.publicKey, publicKey) ||
                 other.publicKey == publicKey) &&
             (identical(other.balance, balance) || other.balance == balance) &&
+            (identical(other.availableBalance, availableBalance) ||
+                other.availableBalance == availableBalance) &&
             const DeepCollectionEquality()
                 .equals(other._transactions, _transactions));
   }
@@ -299,6 +323,7 @@ class _$InitialImpl implements _Initial {
       privateKey,
       publicKey,
       balance,
+      availableBalance,
       const DeepCollectionEquality().hash(_transactions));
 
   /// Create a copy of WalletState
@@ -319,11 +344,12 @@ class _$InitialImpl implements _Initial {
             String? privateKey,
             EthereumAddress? publicKey,
             double? balance,
+            double? availableBalance,
             List<dynamic>? transactions)
         initial,
   }) {
     return initial(errorMessage, status, mnemonic, privateKey, publicKey,
-        balance, transactions);
+        balance, availableBalance, transactions);
   }
 
   @override
@@ -336,11 +362,12 @@ class _$InitialImpl implements _Initial {
             String? privateKey,
             EthereumAddress? publicKey,
             double? balance,
+            double? availableBalance,
             List<dynamic>? transactions)?
         initial,
   }) {
     return initial?.call(errorMessage, status, mnemonic, privateKey, publicKey,
-        balance, transactions);
+        balance, availableBalance, transactions);
   }
 
   @override
@@ -353,13 +380,14 @@ class _$InitialImpl implements _Initial {
             String? privateKey,
             EthereumAddress? publicKey,
             double? balance,
+            double? availableBalance,
             List<dynamic>? transactions)?
         initial,
     required TResult orElse(),
   }) {
     if (initial != null) {
       return initial(errorMessage, status, mnemonic, privateKey, publicKey,
-          balance, transactions);
+          balance, availableBalance, transactions);
     }
     return orElse();
   }
@@ -401,6 +429,7 @@ abstract class _Initial implements WalletState {
       final String? privateKey,
       final EthereumAddress? publicKey,
       final double? balance,
+      final double? availableBalance,
       final List<dynamic>? transactions}) = _$InitialImpl;
 
   @override
@@ -415,6 +444,8 @@ abstract class _Initial implements WalletState {
   EthereumAddress? get publicKey;
   @override
   double? get balance;
+  @override
+  double? get availableBalance; // New field for available balance
   @override
   List<dynamic>? get transactions;
 

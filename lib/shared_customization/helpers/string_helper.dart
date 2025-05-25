@@ -325,4 +325,34 @@ class StringHelper {
     }
   }
 
+
+  String formatAIPrediction(String prediction) {
+    // Tách các dòng
+    final lines = prediction.trim().split('\n');
+
+    final buffer = StringBuffer();
+
+    for (var line in lines) {
+      final trimmed = line.trim();
+
+      // Bỏ qua dòng trống
+      if (trimmed.isEmpty) continue;
+
+      // Nếu là tiêu đề dạng "**Tiêu đề:**"
+      if (trimmed.startsWith('**') && trimmed.endsWith(':**')) {
+        buffer.writeln('\n${trimmed}\n');
+      }
+      // Nếu là dòng gạch đầu dòng bắt đầu bằng '*'
+      else if (trimmed.startsWith('*')) {
+        buffer.writeln('• ${trimmed.substring(1).trim()}');
+      }
+      // Nếu là đoạn văn thông thường
+      else {
+        buffer.writeln(trimmed);
+      }
+    }
+
+    return buffer.toString().trim();
+  }
+
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../app_common_data/app_text_sytle.dart';
 import '../../../shared_customization/widgets/texts/app_text.dart';
 
@@ -9,9 +8,9 @@ class PageView2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
-          colors: [Colors.tealAccent, Colors.white],
+          colors: [Color(0xFFFFFFFF), Color(0xFF289BDA)], // Pink-white gradient
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -19,46 +18,90 @@ class PageView2Screen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 16, right: 16),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.teal,
-                    borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(30),
-                      bottomLeft: Radius.circular(30),
-                      bottomRight: Radius.circular(30),
-                    )
+          const Spacer(flex: 2),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 500),
+              padding: const EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.5), // Glassmorphism effect
+                borderRadius: BorderRadius.circular(24),
+                border: Border.all(color: Colors.white.withOpacity(0.3)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.15),
+                    blurRadius: 20,
+                    spreadRadius: 5,
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: AppText(
-                      'Khám phá thế giới âm nhạc cùng D_music\nNền tảng tuyệt vời để thưởng thức những giai điệu yêu thích. Với D_music',
-                      style: AppTextStyle.bodyText.copyWith(fontSize: 14), color: Colors.white,),
-                  ),
+                ],
+              ),
+              child: AppText(
+                'Earn Crypto with Ease\nExplore staking, trading, and more with CryptoHub',
+                style: AppTextStyle.bodyText.copyWith(
+                  fontSize: 18,
+                  color: Colors.blue,
+                  fontWeight: FontWeight.w600,
+                  height: 1.5,
+                  shadows: [
+                    Shadow(
+                      color: Colors.black.withOpacity(0.2),
+                      offset: const Offset(1, 1),
+                      blurRadius: 3,
+                    ),
+                  ],
                 ),
+                textAlign: TextAlign.center,
               ),
-
-            ],
+            ),
           ),
-          Stack(
-            alignment: Alignment.topRight,
-            children: [
-              Padding(
-                padding: EdgeInsets.all(8),
-                child: Image.asset('assets/images/intro_2_nbgr.webp'),
+          const Spacer(),
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 500),
+            height: 280,
+            width: 280,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white.withOpacity(0.5), // Subtle background for circle
+              border: Border.all(color: Colors.white.withOpacity(0.3)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.2),
+                  blurRadius: 15,
+                  spreadRadius: 5,
+                ),
+              ],
+            ),
+            child: ClipOval(
+              child: Image.asset(
+                'assets/images/earn.png',
+                height: 260, // Slightly smaller to fit within circle
+                width: 260,
+                fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) {
+                  return Container(
+                    height: 260,
+                    width: 260,
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.white.withOpacity(0.2)),
+                    ),
+                    child: Center(
+                      child: AppText(
+                        'Image Not Found',
+                        style: AppTextStyle.bodyText.copyWith(
+                          color: Colors.white.withOpacity(0.7),
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  );
+                },
               ),
-              Padding(
-                padding: EdgeInsets.all(78),
-                child: Image.asset('assets/images/mmussic_notes2.gif'),
-              ),
-
-            ],
-          )
+            ),
+          ),
+          const Spacer(flex: 2),
         ],
       ),
     );

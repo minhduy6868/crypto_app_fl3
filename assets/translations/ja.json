@@ -1,0 +1,486 @@
+{
+
+  "CommonAction": {
+    "Close": "閉じる",
+    "Confirm": "確認",
+    "Cancel": "キャンセル",
+    "Skip": "スキップ",
+    "Back": "戻る",
+    "Continue": "続ける",
+    "Delete": "削除",
+    "Edit": "編集",
+    "Update": "更新",
+    "Resend": "再送信",
+    "Submit": "送信",
+    "Copy": "コピー",
+    "Copied": "コピーしました",
+    "CopyLink": "リンクをコピー",
+    "Search": "検索",
+    "Sending": "送信中",
+    "EnterText": "テキストを入力",
+    "Dismiss": "閉じる",
+    "ViewDetail": "詳細を表示",
+    "Add": "追加",
+    "Download": "ダウンロード",
+    "Login": "ログイン",
+    "Register": "登録",
+    "Logout": "ログアウト",
+    "ShowMore": "もっと見る",
+    "ShowLess": "折りたたむ"
+  },
+
+  "CommonData": {
+    "Menu": "メニュー",
+    "Account": "アカウント",
+    "Setting": "設定",
+    "Email": "メールアドレス",
+    "Password": "パスワード",
+    "NotUpdate": "更新されていません",
+    "Today": "今日",
+    "Yesterday": "昨日",
+    "Now": "たった今",
+    "Minute": "{}分",
+    "Hour": "{}時間",
+    "Day": "{}日",
+    "Week": "{}週間",
+    "Month": "{}ヶ月",
+    "Year": "{}年",
+    "TimeToday": "今日の{}",
+    "TimeYesterday": "昨日の{}",
+    "To": "宛先：{}",
+    "Error": "エラー",
+    "UploadAFile": "ドキュメントをアップロード",
+    "SelectImageOrVideo": "画像または動画を選択",
+    "TakeAPhoto": "カメラで撮影",
+    "UploadFrom": "アップロード元を選択",
+    "LoadingMore": "読み込み中",
+    "JapanCurrency": "円",
+    "Gallery": "ギャラリー",
+    "GetBackWithoutSaveConfirm": "現在のデータが保存されていません。続行しますか？",
+    "ListDataIsEmpty": "データがありません",
+    "HasErrorOccurr": "エラーが発生しました",
+    "CantLoadData": "データを読み込めませんでした",
+    "PleaseFillFullInfo": "すべての情報を入力してください！",
+    "About": "概要",
+    "FeaturePending": "この機能は開発中です",
+    "Currency": "VND",
+    "Male": "男性",
+    "Female": "女性",
+    "OtherGender": "その他の性別"
+  },
+
+  "CommonNotiAction": {
+    "Success": "成功",
+    "YourActionMakingSuccessfully": "アクションが正常に完了しました！",
+    "Failed": "失敗",
+    "YourActionMakingFailed": "アクションが正常に完了しませんでした！",
+    "DownloadFile": "このファイルをダウンロードしますか？",
+    "DownloadFileSuccessfully": "ファイル（{filename}）のダウンロードに成功しました！"
+  },
+
+  "CommonValidation": {
+    "InvalidEmailFormat": "メールアドレスの形式が正しくありません。",
+    "EmailAlreadyInUse": "このメールアドレスはすでに使用されています。",
+    "InvalidPasswordFormat": "パスワードは8文字以上で、数字1文字、大文字1文字、小文字1文字を含む必要があります。",
+    "PasswordConfirmationNotMatch": "パスワードの確認が一致しません。",
+    "NewPasswordConfirmationNotMatch": "新しいパスワードの確認が一致しません。",
+    "NewPasswordCanNotSameOldPassword": "新しいパスワードは古いパスワードと同じにできません。",
+    "MaxLength": "{fieldName}は{value}文字を超えることはできません。",
+    "MinLength": "{fieldName}は少なくとも{value}文字必要です。",
+    "MaxValue": "{fieldName}は{value}を超えることはできません。",
+    "MinValue": "{fieldName}は{value}未満であってはなりません。",
+    "Required": "{fieldName}は必須です。",
+    "CommonRequired": "このフィールドは必須です。",
+    "FieldInvalidate": "{fieldName}の形式が正しくありません。",
+    "OnlyNumberAllow": "{fieldName}には数字のみ入力できます。",
+    "DateTimeFormatIsInvalid": "入力されたデータの日付形式が正しくありません。",
+    "PleaseChooseDifferenceImage": "重複する画像を選択しないでください。",
+    "FileSizeMustLessThan10MB": "ファイルサイズは10MBを超えることはできません。",
+    "ListFileHasOneOrMoreFileSizeBiggerThan10MB": "選択したファイルリストに10MBを超えるファイルが含まれています。これらのファイルは削除されます。",
+    "ImageSizeMustLessThan10MB": "画像サイズは10MBを超えることはできません。",
+    "TotalFileSizeMustLessThan10MB": "合計ファイルサイズは10MBを超えることはできません。",
+    "TotalImageSizeMustLessThan10MB": "合計画像サイズは10MBを超えることはできません。"
+  },
+
+  "Login": {
+    "AppName": "",
+    "Email": "メールアドレス",
+    "InputEmail": "メールアドレスを入力してください",
+    "Password": "パスワード",
+    "InputPassword": "パスワードを入力してください",
+    "KeepLogin": "ログイン状態を保持",
+    "ForgotPassword": "パスワードを忘れましたか？",
+    "Login": "ログイン",
+    "NotHaveAccount": "アカウントをお持ちではありませんか？",
+    "Register": "こちらで登録",
+    "Contact": "お問い合わせ",
+    "EULA": "エンドユーザー使用許諾契約",
+    "AccountNotActive": "アカウントが有効化されていません",
+    "ActiveAccountSuccessTitle": "有効化成功",
+    "ActiveAccountSuccessContent": "アカウントが正常に有効化されました。ログインしてシステムの利用を続けてください。",
+    "LoginByAdminAccount": "あなたのアカウントは管理者アカウントであり、ウェブサイトでのみログイン可能です",
+    "LoginFailedTitle": "ログイン失敗",
+    "AccountAlreadyActivated": "アカウントはすでに有効化されています。",
+    "SessionTimeOutTitle": "セッションタイムアウト",
+    "SessionTimeOutContent": "ログインセッションが期限切れです。システムを続けて使用するには再度ログインしてください。エラーがあればお問い合わせください。",
+    "LoginErrorTitle": "エラー",
+    "LoginDescription": "当社の{privacy_policy}および{term_of_service}に同意する"
+  },
+
+  "Register": {
+    "Register": "登録",
+    "Submit": "登録",
+    "Name": "氏名",
+    "NamePlaceHolder": "氏名を入力してください",
+    "Email": "メールアドレス",
+    "EmailPlaceHolder": "メールアドレスを入力してください",
+    "Password": "パスワード",
+    "PasswordPlaceHolder": "パスワードを入力してください",
+    "ConfirmPassword": "パスワード確認",
+    "ConfirmPasswordPlaceHolder": "パスワード確認を入力してください",
+    "DoYouHaveAccount": "すでにアカウントをお持ちですか？",
+    "LoginHere": "こちらでログイン",
+    "CheckYourEmailTitle": "メールを確認してください",
+    "CheckYourEmailContent": "{email}に認証メールを送信しました。受信トレイを確認し、リンクをクリックしてアカウント登録を完了してください。",
+    "CheckSpamContent": "メールが見つからない場合は、迷惑メールフォルダを確認するか、再送信してください",
+    "Resend": "再送信",
+    "GoBack": "ホームページに戻る",
+    "ResendAfter30Seconds": "30秒後に再送信",
+    "RegisterSuccessTitle": "成功",
+    "RegisterSuccessContent": "アカウント登録が成功しました。受信トレイまたは迷惑メールフォルダを確認してアカウントを認証し、システムの利用を開始してください。"
+  },
+
+  "ResetPassword": {
+    "ForgotPassword": "パスワードを忘れた",
+    "ResetPassword": "パスワードをリセット",
+    "EmailAddress": "メールアドレス",
+    "EmailPlaceHolder": "メールアドレスを入力",
+    "ResetPasswordSuccessTitle": "成功",
+    "ResetPasswordSuccessContent": "受信トレイまたは迷惑メールフォルダを確認してください。"
+  },
+
+  "ChangePassword": {
+    "ChangePassword": "パスワードを変更",
+    "CurrentPassword": "現在のパスワード",
+    "CurrentPasswordPlaceHolder": "現在のパスワードを入力",
+    "NewPassword": "新しいパスワード",
+    "NewPasswordPlaceHolder": "新しいパスワードを入力",
+    "NewConfirmPassword": "新しいパスワードの確認",
+    "NewConfirmPasswordPlaceHolder": "新しいパスワードを再入力",
+    "KeepLoginConfirmTitle": "パスワードが変更されました",
+    "KeepLoginConfirm": "他のデバイスでログインを維持しますか？",
+    "LogoutAllDevices": "このアカウントでログインしているすべてのデバイスからログアウトします。",
+    "KeepLogin": "ログインを維持。",
+    "Submit": "確認",
+    "ChangePasswordSuccessTitle": "パスワードが変更されました",
+    "ChangePasswordSuccessContent": "パスワードが正常に変更されました。システムを続けて使用するにはログインしてください"
+  },
+
+  "ConfirmForgotPassword": {
+    "ResetPassword": "パスワードを回復",
+    "NewPassword": "新しいパスワード",
+    "NewPasswordPlaceHolder": "新しいパスワードを入力",
+    "NewConfirmPassword": "新しいパスワードの確認",
+    "NewConfirmPasswordPlaceHolder": "新しいパスワードを再入力",
+    "Update": "変更を確認",
+    "ResetPasswordSuccessTitle": "成功",
+    "ResetPasswordSuccessContent": "パスワードが正常に変更されました。システムを使用するには再度ログインしてください。",
+    "ResetPasswordFailureTitle": "エラー",
+    "ResetPasswordFailureContent": "パスワードのリセットに失敗しました。"
+  },
+
+  "ResendEmail": {
+    "EmailSentDescription1": "{email}に確認メールが送信されました。リンクをクリックしてアカウント登録を完了してください。",
+    "EmailSentDescription2": "確認メールを受信していない場合や紛失した場合は、以下でメールを再送信してください。",
+    "EmailSent": "確認メールを送信しました",
+    "ResendEmail": "メールを再送信",
+    "PleaseRequestAfter30Seconds": "{time}秒後に再送信してください",
+    "GetBackHome": "ホームページに戻る",
+    "ResendEmailFailed": "メールの再送信に失敗しました",
+    "ConfirmEmail": "メールを確認",
+    "ResendEmailSuccessfully": "メールの送信に成功しました"
+  },
+
+  "LandingPage": {
+    "LandingPage": "ランディングページ"
+  },
+
+  "MainTab": {
+    "MainTab": "メインタブ"
+  },
+
+  "Notification": {
+    "Notification": "通知"
+  },
+
+  "DeleteAccount": {
+    "DeleteAccount": "アカウント削除"
+  },
+
+  "Placeholder": {
+    "InputFieldPlaceholder": "{fieldName}を入力",
+    "SelectFieldPlaceholder": "{fieldName}を選択",
+    "DateTimeFieldPlaceholder": "日付を選択",
+    "SearchPlaceHolder": "{fieldName}を検索",
+    "UploadFilePlaceHolder": "ファイルを選択"
+  },
+
+  "Permission": {
+    "NotAnyVisibleCamera": "利用可能なカメラがありません",
+    "PleaseAcceptCameraPermission": "デバイスのカメラへのアクセスを許可してください",
+    "CameraPermissionPurpose": "アプリはデバイスのカメラを使用して写真を撮影します",
+    "No": "いいえ",
+    "Yes": "同意",
+    "GalleryPermissionPurpose": "アプリはギャラリーの写真を使用します",
+    "CanNotAccessGalleryPermission": "アクセス権限が拒否されたため、ギャラリーにアクセスできません",
+    "PleaseAccessGalleryPermission": "フォトギャラリーへのアクセスを許可してください"
+  },
+
+  "LostConnection": {
+    "LostConnection": "接続が切断されました",
+    "PleaseCheckConnection": "ネットワーク接続を確認するか、再度試してください。",
+    "Retry": "再接続"
+  },
+
+  "TermOfService": {
+    "TermOfService": "利用規約"
+  },
+
+  "PrivacyPolicy": {
+    "PrivacyPolicy": "プライバシーポリシー"
+  },
+
+  "SystemError": {
+    "SystemErrorTitle": "申し訳ありません",
+    "SystemErrorContent": "システムはメンテナンス中です。"
+  },
+
+  "AppUpdate": {
+    "NewUpdateIsAvailable": "新しいアップデートが利用可能です",
+    "ThisVerionIsNotSupported": "このアプリの現在のバージョンはサポートされていません。",
+    "Update": "アップデート",
+    "UpdateDescription": "多くの機能を追加し、いくつかのバグを修正して、最高の体験を提供します。",
+    "Skip": "スキップ"
+  },
+
+  "Error": {
+    "UnexpectedError": "予期しないエラーが発生しました。",
+    "SendTimeoutError": "APIサーバーへの接続時に送信タイムアウトエラーが発生しました。",
+    "ConnectionTimeoutError": "APIサーバーへの接続がタイムアウトしました。",
+    "CancalledApiError": "APIサーバーへのリクエストがキャンセルされました。",
+    "ConnectionError": "インターネット接続の問題でAPIサーバーへの接続に失敗しました。",
+    "ReceiveTimeoutError": "APIサーバーへの接続時に受信タイムアウトエラーが発生しました。"
+  },
+
+  "HomeScreen": {
+    "Top7Coins": "トップ7コイン",
+    "Top5Exchanges": "トップ5取引所",
+    "GoodMorning": "おはようございます！",
+    "Welcome": "ようこそ！",
+    "ExploreMarket": "マーケットを探索しましょう！",
+    "SearchCoins": "コインを検索...",
+    "SeeAll": "すべてを見る",
+    "NoCoinsFound": "'%s'のコインが見つかりません",
+    "SearchResults": "検索結果",
+    "NoCoinsAvailable": "利用可能なコインはありません",
+    "NoExchangesAvailable": "利用可能な取引所はありません",
+    "Unknown": "不明",
+    "Vol24h": "24時間の取引量",
+    "PopularCoins": "人気のコイン",
+    "FAQ": "よくある質問",
+    "About": "概要",
+    "Convert": "変換",
+    "Report": "報告",
+    "Settings": "設定",
+    "FavoriteCoins": "お気に入りのコイン",
+    "LoginToFavorite": "お気に入りに追加するにはログインしてください"
+  },
+
+  "AccountScreen": {
+    "Security": "セキュリティ",
+    "SecurityOptions": "セキュリティオプション",
+    "ChangePassword": "パスワードを変更",
+    "ResetPasswordViaEmail": "メールでパスワードをリセット",
+    "DeleteAccount": "アカウント削除",
+    "EditName": "名前を編集",
+    "FirstName": "名",
+    "LastName": "姓",
+    "Save": "保存",
+    "EnterNewPassword": "新しいパスワードを入力"
+  },
+
+  "DetailCoinScreen": {
+    "AIPrediction": "AI予測",
+    "Refresh": "更新",
+    "ChartData": "チャートデータ",
+    "PricePrediction": "価格予測",
+    "ShowLess": "折りたたむ",
+    "ReadMore": "もっと読む",
+    "1D": "1日",
+    "1W": "1週間",
+    "1M": "1ヶ月",
+    "3M": "3ヶ月",
+    "6M": "6ヶ月",
+    "1Y": "1年"
+  },
+
+  "DetailExchangeScreen": {
+    "ExchangeDetails": "取引所の詳細",
+    "About": "概要",
+    "VisitWebsite": "ウェブサイトを訪問",
+    "TrustScore": "信頼スコア",
+    "Year": "設立年",
+    "Volume": "取引量",
+    "Score": "スコア",
+    "NoDescriptionAvailable": "説明はありません"
+  },
+
+  "DrawerScreen": {
+    "LogOut": "ログアウト"
+  },
+
+  "GgAddScreen": {
+    "GoBack": "戻る"
+  },
+
+  "MenuBarComponent": {
+    "FAQ": "よくある質問",
+    "About": "概要",
+    "Convert": "変換",
+    "Report": "報告"
+  },
+
+  "NewsCard": {
+    "NoTitle": "タイトルはありません"
+  },
+
+  "ListNewsScreen": {
+    "CryptoNews": "クリプトニュース",
+    "Loading": "読み込み中...",
+    "NoNewsAvailable": "ニュースがありません",
+    "TryAgain": "もう一度試す",
+    "NewsDetail": "ニュース詳細",
+    "AIEvaluation": "AIで評価",
+    "ReadOriginal": "元の記事を読む",
+    "NoLinkAvailable": "リンクがありません",
+    "FailedToOpenLink": "リンクを開けませんでした",
+    "SearchExchanges": "取引所を検索...",
+    "SearchCoins": "コインを検索...",
+    "All": "すべて",
+    "Increasing": "上昇",
+    "Decreasing": "下降",
+    "NoCoinsFound": "'%s' のコインが見つかりませんでした",
+    "NoExchangesFound": "'%s' の取引所が見つかりませんでした"
+  },
+  "FavoriteNewsScreen": {
+    "Title": "お気に入りのニュース",
+    "NoFavorites": "まだお気に入りのニュースはありません"
+  },
+  "FavoriteCoinsScreen": {
+    "title": "お気に入りのコイン",
+    "empty_state": "お気に入りのコインはありません",
+    "login_required": "コインを追加するにはログインしてください"
+  },
+
+  "LoginScreen": {
+    "Login": "ログイン",
+    "Email": "メール",
+    "Password": "パスワード",
+    "ForgotPassword": "パスワードを忘れました",
+    "NoAccount": "アカウントをお持ちでないですか？",
+    "Register": "登録",
+    "LoginSuccess": "ログインに成功しました！",
+    "LoginError": "エラー: %s"
+  },
+
+  "RegisterScreen": {
+    "Register": "登録",
+    "FirstName": "名",
+    "LastName": "姓",
+    "ConfirmPassword": "パスワード確認",
+    "RegisterSuccess": "登録に成功しました！ログインしてください。",
+    "RegisterError": "登録に失敗しました！再試行してください。",
+    "AlreadyHaveAccount": "すでにアカウントをお持ちですか？"
+  },
+
+  "MainScreen": {
+    "Coins": "コイン",
+    "Exchanges": "取引所"
+  },
+
+  "SettingScreen": {
+    "Settings": "設定",
+    "Language": "言語",
+    "English": "英語",
+    "Vietnamese": "ベトナム語",
+    "Japanese": "日本語",
+    "FontSize": "フォントサイズ",
+    "Theme": "テーマ",
+    "ChangeLanguageSuccess": "言語の変更に成功しました",
+    "ChangeLanguageFailed": "言語の変更に失敗しました"
+  },
+
+  "ViewAllListScreen": {
+    "RecentTransactions": "最近の取引",
+    "NoTransactionsYet": "取引はありません",
+    "TransactionsWillAppearHere": "取引はここに表示されます",
+    "SentETH": "ETHを送信",
+    "ReceivedETH": "ETHを受信",
+    "UnknownDate": "不明な日付"
+  },
+
+  "WalletScreen": {
+    "TotalBalance": "合計残高",
+    "AvailableBalance": "利用可能な残高",
+    "NoWalletFound": "ウォレットが見つかりません",
+    "CreateWalletPrompt": "暗号通貨を使用するには新しいウォレットを作成してください",
+    "CreateWallet": "ウォレットを作成",
+    "Send": "送信",
+    "Receive": "受信",
+    "Swap": "スワップ",
+    "Warning": "警告",
+    "PrivateKeyWarning": "あなたの秘密鍵はウォレットへの完全なアクセスを提供します。絶対に他人と共有しないでください！",
+    "Cancel": "キャンセル",
+    "IUnderstand": "理解しました",
+    "YourPrivateKey": "あなたの秘密鍵",
+    "Copy": "コピー",
+    "Close": "閉じる",
+    "SendEthereum": "イーサリアムを送信",
+    "RecipientAddress": "受信者のアドレス",
+    "AmountETH": "金額 (ETH)",
+    "Balance": "残高: %s ETH",
+    "InvalidAmount": "有効なETHの金額を入力してください",
+    "InsufficientBalance": "残高が不足しています",
+    "InvalidAddress": "有効なイーサリアムアドレスを入力してください",
+    "AddressCopied": "アドレスがコピーされました",
+    "PrivateKeyCopied": "秘密鍵がコピーされました",
+    "RefreshBalance": "残高を更新",
+    "ViewPrivateKey": "秘密鍵を表示",
+    "BackupWallet": "ウォレットをバックアップ",
+    "WalletSettings": "ウォレット設定",
+    "RecentTransactions": "最近の取引",
+    "SentETH": "ETHを送信",
+    "ReceivedETH": "ETHを受信",
+    "NoTransactionsYet": "まだ取引がありません",
+    "TransactionsPrompt": "あなたの取引はここに表示されます",
+    "EnterAddressManually": "アドレスを手動で入力",
+    "Loading": "読み込み中...",
+    "UnknownDate": "不明な日付",
+    "NoAddressAvailable": "アドレスがありません",
+    "NoPrivateKeyAvailable": "秘密鍵がありません",
+    "ScanToReceive": "スキャンして受信",
+    "MyWalletAddress": "私のウォレットアドレス"
+  },
+  "WelcomeScreen": {
+    "GetStarted": "開始",
+    "Back": "戻る",
+    "Next": "次へ"
+  },
+
+
+
+  "BlocBaseScreen": {
+    "SuccessNotification": "操作が成功しました",
+    "ErrorNotification": "エラーが発生しました"
+  }
+}

@@ -7,6 +7,7 @@ import 'package:crypto_app/shared_customization/widgets/app_layout.dart';
 import 'package:crypto_app/shared_customization/widgets/app_container.dart';
 import 'package:crypto_app/screens/bloc_base_screen.dart';
 import 'package:crypto_app/screens/main_screen/cubit/main_screen_cubit.dart';
+import 'package:animate_do/animate_do.dart';
 import '/screens/drawer_screen/drawer_screen.dart';
 import '/shared_customization/widgets/custom_widgets/app_dismiss_keyboard.dart';
 import '/app_common_data/app_colors.dart';
@@ -26,30 +27,29 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     super.initState();
-    // Khởi tạo AdMob và quảng cáo banner
-    _bannerAd = BannerAd(
-      adUnitId: 'ca-app-pub-1621248632569820/7699331541', // Thay bằng ID quảng cáo của bạn
-      size: AdSize.banner,
-      request: AdRequest(),
-      listener: BannerAdListener(
-        onAdLoaded: (_) {
-          setState(() {
-            _isBannerAdReady = true;
-          });
-        },
-        onAdFailedToLoad: (ad, error) {
-          print('Failed to load a banner ad: ${error.message}');
-          ad.dispose();
-        },
-      ),
-    );
-    _bannerAd.load();
+    // Initialize AdMob and banner ad
+    // _bannerAd = BannerAd(
+    //   adUnitId: 'ca-app-pub-1621248632569820/7699331541', // Placeholder ID
+    //   size: AdSize.banner,
+    //   request: const AdRequest(),
+    //   listener: BannerAdListener(
+    //     onAdLoaded: (_) {
+    //       setState(() {
+    //         _isBannerAdReady = true;
+    //       });
+    //     },
+    //     onAdFailedToLoad: (ad, error) {
+    //       print('Failed to load banner ad: ${error.message}');
+    //       ad.dispose();
+    //     },
+    //   ),
+    // );
+    // _bannerAd.load();
   }
 
   @override
   void dispose() {
-    // Dọn dẹp tài nguyên quảng cáo khi không cần thiết
-    _bannerAd.dispose();
+    //_bannerAd.dispose();
     super.dispose();
   }
 
@@ -65,82 +65,128 @@ class _MainScreenState extends State<MainScreen> {
             onWillPop: () => Future.value(false),
             drawer: const DrawerScreen(),
             showAppBar: false,
-            body: Column(
-              children: [
-                // Body content của MainScreen
-                Expanded(child: state.currentTabs.widget),
-                // Quảng cáo banner sẽ được hiển thị dưới cùng
-                if (_isBannerAdReady)
-                  Container(
-                    alignment: Alignment.center,
-                    child: AdWidget(ad: _bannerAd),
-                    width: _bannerAd.size.width.toDouble(),
-                    height: _bannerAd.size.height.toDouble(),
-                  ),
-              ],
-            ),
-            bottomNavigationBar: AppContainer(
-              alignment: Alignment.center,
-              height: 65,
-              color: AppColors.white,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 5, right: 5),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: MainTabs.values.map((tab) {
-                    return Expanded(
-                      child: Center(
-                        child: InkWell(
-                          onTap: () {
-                            context
-                                .read<MainScreenCubit>()
-                                .changeTab(tab);
-                          },
-                          child: Stack(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(right: 0, left: 0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    AppContainer(
-                                      padding: const EdgeInsets.only(
-                                          bottom: 3,
-                                          top: 4,
-                                          left: 0,
-                                          right: 0),
-                                      border: Border(
-                                          top: BorderSide(
-                                              width: 1.5,
-                                              color: tab == state.currentTabs
-                                                  ? AppColors.primaryColor
-                                                  : AppColors.transparent)),
-                                      child: Icon(
-                                          tab != state.currentTabs //stack
-                                              ? tab.icon
-                                              : tab.activeIcon,
-                                          size: 24,
-                                          color: tab != state.currentTabs
-                                              ? AppColors.black
-                                              : AppColors.primaryColor),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    );
-                  }).toList(),
+            body: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color(0xFFE8F5E9), // Light green
+                    Color(0xFF44C1CC), // Emerald green
+                  ],
                 ),
               ),
+              child: Column(
+                children: [
+                  // Main content
+                  Expanded(
+                    child: FadeInUp(
+                      duration: const Duration(milliseconds: 600),
+                      child: state.currentTabs.widget,
+                    ),
+                  ),
+
+                  // Banner ad placeholder (commented out due to tab-switching issue)
+                  /*
+                  if (_isBannerAdReady)
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.9),
+                        borderRadius: BorderRadius.circular(8),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.1),
+                            blurRadius: 8,
+                            offset: const Offset(0, 4),
+                          ),
+                        ],
+                      ),
+                      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: AdWidget(ad: _bannerAd),
+                      width: _bannerAd.size.width.toDouble(),
+                      height: _bannerAd.size.height.toDouble(),
+                    ),
+                  */
+                ],
+              ),
+            ),
+            bottomNavigationBar: FadeInUp(
+              duration: const Duration(milliseconds: 600),
+              child: _buildBottomNavigationBar(context, state),
             ),
           ),
         );
       },
+    );
+  }
+
+  Widget _buildBottomNavigationBar(BuildContext context, MainScreenState state) {
+    return Container(
+      height: 70,
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.9),
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
+        border: Border.all(
+          color: Colors.green.withOpacity(0.2),
+          width: 1,
+        ),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: MainTabs.values.map((tab) {
+          final isActive = tab == state.currentTabs;
+          return Expanded(
+            child: InkWell(
+              onTap: () => context.read<MainScreenCubit>().changeTab(tab),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  // Animated indicator
+                  if (isActive)
+                    Container(
+                      width: 40,
+                      height: 4,
+                      margin: const EdgeInsets.only(bottom: 60),
+                      decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                          colors: [Color(0xFF3DB9D5), Color(0xFFA2CEEA)],
+                        ),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        isActive ? tab.activeIcon : tab.icon,
+                        size: 26,
+                        color: isActive ? const Color(0xFF289BDA) : Colors.grey[600],
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        tab.toString().split('.').last, // Simplified tab name
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: isActive ? FontWeight.w600 : FontWeight.w400,
+                          color: isActive ? const Color(0xFF2DB1EC) : Colors.grey[600],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        }).toList(),
+      ),
     );
   }
 }

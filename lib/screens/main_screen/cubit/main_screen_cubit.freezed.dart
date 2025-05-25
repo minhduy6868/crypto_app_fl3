@@ -159,7 +159,7 @@ class __$$InitialImplCopyWithImpl<$Res>
 
 class _$InitialImpl implements _Initial {
   const _$InitialImpl(
-      {this.errorMessage, this.status, this.currentTabs = MainTabs.home});
+      {this.errorMessage, this.status, this.currentTabs = MainTabs.Home});
 
   @override
   final String? errorMessage;

@@ -270,5 +270,216 @@
     "CancalledApiError": "Yêu cầu tới máy chủ API đã bị hủy.",
     "ConnectionError": "Kết nối với máy chủ API không thành công do kết nối Internet.",
     "ReceiveTimeoutError": "Lỗi nhận thời gian chờ khi kết nối với máy chủ API."
+  },
+  "HomeScreen": {
+    "Top7Coins": "Top 7 Coin",
+    "Top5Exchanges": "Top 5 Sàn giao dịch",
+    "GoodMorning": "Chào buổi sáng!",
+    "Welcome": "Xin chào!",
+    "ExploreMarket": "Hãy khám phá thị trường!",
+    "SearchCoins": "Tìm kiếm coin...",
+    "SeeAll": "Xem tất cả",
+    "NoCoinsFound": "Không tìm thấy coin cho '%s'",
+    "SearchResults": "Kết quả tìm kiếm",
+    "NoCoinsAvailable": "Không có coin nào",
+    "NoExchangesAvailable": "Không có sàn giao dịch nào",
+    "Unknown": "Không xác định",
+    "Vol24h": "KL 24h",
+    "PopularCoins": "Coins phổ biến",
+    "FavoriteCoins": "Coin yêu thích",
+    "FAQ": "Câu Hỏi",
+    "About": "Giới Thiệu",
+    "Convert": "Chuyển Đổi",
+    "Report": "Báo Cáo",
+    "Settings": "Cài Đặt",
+    "LoginToFavorite": "Đăng nhập để thêm vào yêu thích"
+  },
+  "AccountScreen": {
+    "Security": "Bảo mật",
+    "SecurityOptions": "Tùy chọn bảo mật",
+    "ChangePassword": "Đổi mật khẩu",
+    "ResetPasswordViaEmail": "Đặt lại mật khẩu qua email",
+    "DeleteAccount": "Xóa tài khoản",
+    "EditName": "Chỉnh sửa tên",
+    "FirstName": "Tên",
+    "LastName": "Họ",
+    "Save": "Lưu",
+    "EnterNewPassword": "Nhập mật khẩu mới"
+  },
+
+  "DetailCoinScreen": {
+    "AIPrediction": "Dự đoán AI",
+    "Refresh": "Làm mới",
+    "ChartData": "Dữ liệu biểu đồ",
+    "PricePrediction": "Dự đoán giá",
+    "ShowLess": "Thu gọn",
+    "ReadMore": "Xem thêm",
+    "1D": "1 ngày",
+    "1W": "1 tuần",
+    "1M": "1 tháng",
+    "3M": "3 tháng",
+    "6M": "6 tháng",
+    "1Y": "1 năm"
+  },
+
+  "DetailExchangeScreen": {
+    "ExchangeDetails": "Chi tiết sàn giao dịch",
+    "About": "Giới thiệu",
+    "VisitWebsite": "Truy cập website",
+    "TrustScore": "Điểm tin cậy",
+    "Year": "Năm thành lập",
+    "Volume": "Khối lượng",
+    "Score": "Điểm",
+    "NoDescriptionAvailable": "Không có mô tả"
+  },
+
+  "DrawerScreen": {
+    "LogOut": "Đăng xuất"
+  },
+
+  "GgAddScreen": {
+    "GoBack": "Quay lại"
+  },
+
+  "MenuBarComponent": {
+    "FAQ": "Hỏi đáp",
+    "About": "Giới thiệu",
+    "Convert": "Chuyển đổi",
+    "Report": "Báo cáo"
+  },
+
+  "NewsCard": {
+    "NoTitle": "Không có tiêu đề"
+  },
+
+  "ListNewsScreen": {
+    "CryptoNews": "Tin tức Crypto",
+    "Loading": "Đang tải...",
+    "NoNewsAvailable": "Không có tin tức nào",
+    "TryAgain": "Thử lại",
+    "NewsDetail": "Chi tiết tin tức",
+    "AIEvaluation": "Đánh giá bằng AI",
+    "ReadOriginal": "Đọc bài viết gốc",
+    "NoLinkAvailable": "Không có liên kết",
+    "FailedToOpenLink": "Không thể mở liên kết",
+    "SearchExchanges": "Tìm kiếm sàn giao dịch...",
+    "SearchCoins": "Tìm kiếm đồng coin...",
+    "All": "Tất cả",
+    "Increasing": "Tăng",
+    "Decreasing": "Giảm",
+    "NoCoinsFound": "Không tìm thấy đồng coin nào cho '%s'",
+    "NoExchangesFound": "Không tìm thấy sàn giao dịch nào cho '%s'"
+  },
+  "FavoriteNewsScreen": {
+    "Title": "Tin tức yêu thích",
+    "NoFavorites": "Chưa có tin tức yêu thích nào"
+  },
+  "FavoriteCoinsScreen": {
+    "title": "Coins yêu thích",
+    "empty_state": "Không có coins yêu thích nào cả",
+    "login_required": "Đăng nhập để thêm coins"
+  },
+
+  "LoginScreen": {
+    "Login": "Đăng nhập",
+    "Email": "Email",
+    "Password": "Mật khẩu",
+    "ForgotPassword": "Quên mật khẩu",
+    "NoAccount": "Chưa có tài khoản?",
+    "Register": "Đăng ký",
+    "LoginSuccess": "Đăng nhập thành công!",
+    "LoginError": "Lỗi: %s"
+  },
+
+  "RegisterScreen": {
+    "Register": "Đăng ký",
+    "FirstName": "Tên",
+    "LastName": "Họ",
+    "ConfirmPassword": "Xác nhận mật khẩu",
+    "RegisterSuccess": "Đăng ký thành công! Vui lòng đăng nhập.",
+    "RegisterError": "Đăng ký thất bại! Vui lòng thử lại.",
+    "AlreadyHaveAccount": "Đã có tài khoản?"
+  },
+
+  "MainScreen": {
+    "Coins": "Coin",
+    "Exchanges": "Sàn giao dịch"
+  },
+
+  "SettingScreen": {
+    "Settings": "Cài đặt",
+    "Language": "Ngôn ngữ",
+    "English": "Tiếng Anh",
+    "Vietnamese": "Tiếng Việt",
+    "Japanese": "Tiếng Nhật",
+    "FontSize": "Cỡ chữ",
+    "Theme": "Chủ đề",
+    "ChangeLanguageSuccess": "Đổi ngôn ngữ thành công",
+    "ChangeLanguageFailed": "Đổi ngôn ngữ thất bại"
+  },
+
+
+
+  "ViewAllListScreen": {
+    "RecentTransactions": "Giao dịch gần đây",
+    "NoTransactionsYet": "Chưa có giao dịch",
+    "TransactionsWillAppearHere": "Các giao dịch sẽ hiển thị ở đây",
+    "SentETH": "Gửi ETH",
+    "ReceivedETH": "Nhận ETH",
+    "UnknownDate": "Ngày không xác định"
+  },
+  "WalletScreen": {
+    "TotalBalance": "Tổng Số Dư",
+    "AvailableBalance": "Số Dư Có Sẵn",
+    "NoWalletFound": "Không Tìm Thấy Ví",
+    "CreateWalletPrompt": "Vui Lòng Tạo Ví Mới Để Sử Dụng Tiền Điện Tử",
+    "CreateWallet": "Tạo Ví",
+    "Send": "Gửi",
+    "Receive": "Nhận",
+    "Swap": "Hoán Đổi",
+    "Warning": "Cảnh Báo",
+    "PrivateKeyWarning": "Khóa Riêng Của Bạn Cung Cấp Toàn Quyền Truy Cập Vào Ví. Không Bao Giờ Chia Sẻ Với Bất Kỳ Ai!",
+    "Cancel": "Hủy",
+    "IUnderstand": "Tôi Hiểu",
+    "YourPrivateKey": "Khóa Riêng Của Bạn",
+    "Copy": "Sao Chép",
+    "Close": "Đóng",
+    "SendEthereum": "Gửi Ethereum",
+    "RecipientAddress": "Địa Chỉ Người Nhận",
+    "AmountETH": "Số Lượng (ETH)",
+    "Balance": "Số Dư: %s ETH",
+    "InvalidAmount": "Vui Lòng Nhập Số Lượng ETH Hợp Lệ",
+    "InsufficientBalance": "Số Dư Không Đủ",
+    "InvalidAddress": "Vui Lòng Nhập Địa Chỉ Ethereum Hợp Lệ",
+    "AddressCopied": "Đã Sao Chép Địa Chỉ",
+    "PrivateKeyCopied": "Đã Sao Chép Khóa Riêng",
+    "RefreshBalance": "Làm Mới Số Dư",
+    "ViewPrivateKey": "Xem Khóa Riêng",
+    "BackupWallet": "Sao Lưu Ví",
+    "WalletSettings": "Cài Đặt Ví",
+    "RecentTransactions": "Giao Dịch Gần Đây",
+    "SentETH": "Đã Gửi ETH",
+    "ReceivedETH": "Đã Nhận ETH",
+    "NoTransactionsYet": "Chưa Có Giao Dịch",
+    "TransactionsPrompt": "Giao dịch của bạn sẽ xuất hiện tại đây",
+    "EnterAddressManually": "Nhập Địa Chỉ Thủ Công",
+    "Loading": "Đang tải...",
+    "UnknownDate": "Ngày không xác định",
+    "NoAddressAvailable": "Không có địa chỉ",
+    "NoPrivateKeyAvailable": "Không có khóa riêng",
+    "ScanToReceive": "Quét để nhận",
+    "MyWalletAddress": "Địa Chỉ Ví Của Tôi"
+  },
+  "WelcomeScreen": {
+    "GetStarted": "Bắt đầu",
+    "Back": "Quay lại",
+    "Next": "Tiếp theo"
+  },
+
+  "BlocBaseScreen": {
+    "SuccessNotification": "Thao tác thành công",
+    "ErrorNotification": "Đã xảy ra lỗi"
   }
+
 }
+

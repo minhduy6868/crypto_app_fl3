@@ -97,7 +97,7 @@ class AccountScreenCubit extends Cubit<AccountScreenState> with UpdateBlocBaseSt
   /// Xóa tài khoản
   Future<void> deleteAccount() async {
     try {
-      await authRepo.deleteAccount();
+     // await authRepo.deleteUserAccount();
       emit(state.copyWith(status: ScreenValue.success()));
     } catch (e) {
       emit(state.copyWith(

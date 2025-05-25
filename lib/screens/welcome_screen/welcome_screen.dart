@@ -21,7 +21,7 @@ class WelcomeScreen extends StatefulWidget {
 class _WelcomeScreenState extends State<WelcomeScreen> {
   final PageController _controllerPage = PageController();
   bool onLastPage = false;
-  final CustomSharedPreferences sp = CustomSharedPreferences(); // Khởi tạo SharedPreferences
+  final CustomSharedPreferences sp = CustomSharedPreferences();
 
   @override
   void initState() {
@@ -31,13 +31,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   Future<void> _checkFirstLaunch() async {
     await sp.init();
     sp.isFirstLaunch = false;
-      Navigator.pushReplacementNamed(context, Routes.loginScreen);
-
+    Navigator.pushReplacementNamed(context, Routes.loginScreen);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[900], // Solid dark background, no gradient
       body: Stack(
         children: [
           PageView(
@@ -47,63 +47,81 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 onLastPage = (index == 2);
               });
             },
-            children: [
+            children: const [
               PageView1Screen(),
               PageView2Screen(),
               PageView3Screen(),
             ],
           ),
           Container(
-            alignment: Alignment(0, 0.9),
+            alignment: const Alignment(0, 0.92),
             child: onLastPage
                 ? Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: AppColors.orange,
-                ),
-                child: AppButton(
-                  onPressed: () async {
-                   _checkFirstLaunch();
-                  },
-                  child: AppText(
-                    "Get Started",
-                    style: AppTextStyle.buttonText,
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: AppButton(
+                onPressed: _checkFirstLaunch,
+                child: AppText(
+                  "Get Started",
+                  style: AppTextStyle.buttonText.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   ),
-                  width: double.infinity,
-                  height: MAX_HEIGHT_SCREEN / 16,
                 ),
+                width: double.infinity,
+                height: MAX_HEIGHT_SCREEN / 14,
+                radius: BorderRadius.circular(12),
+                color: AppColors.orange.withOpacity(0.9),
               ),
             )
                 : Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Back button
-                GestureDetector(
-                  child: AppText('Back'),
-                  onTap: () {
-                    _controllerPage.previousPage(
-                      duration: Duration(milliseconds: 100),
-                      curve: Curves.bounceIn,
-                    );
-                  },
+                Padding(
+                  padding: const EdgeInsets.only(left: 24),
+                  child: GestureDetector(
+                    onTap: () {
+                      _controllerPage.previousPage(
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.easeInOut,
+                      );
+                    },
+                    child: AppText(
+                      'Back',
+                      style: AppTextStyle.bodyText.copyWith(
+                        color: Colors.white,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
                 ),
-                // Smooth Page Indicator
                 SmoothPageIndicator(
-                  effect: ScrollingDotsEffect(),
                   controller: _controllerPage,
                   count: 3,
+                  effect: WormEffect(
+                    dotColor: Colors.grey[700]!,
+                    activeDotColor: AppColors.orange,
+                    dotHeight: 8,
+                    dotWidth: 8,
+                    spacing: 8,
+                  ),
                 ),
-                // Next button
-                GestureDetector(
-                  child: AppText('Next'),
-                  onTap: () {
-                    _controllerPage.nextPage(
-                      duration: Duration(milliseconds: 100),
-                      curve: Curves.bounceIn,
-                    );
-                  },
+                Padding(
+                  padding: const EdgeInsets.only(right: 24),
+                  child: GestureDetector(
+                    onTap: () {
+                      _controllerPage.nextPage(
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.easeInOut,
+                      );
+                    },
+                    child: AppText(
+                      'Next',
+                      style: AppTextStyle.bodyText.copyWith(
+                        color: Colors.white,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),

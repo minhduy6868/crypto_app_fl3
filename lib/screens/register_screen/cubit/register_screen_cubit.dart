@@ -2,6 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:crypto_app/public_providers/config/bloc_base_state.dart';
 import 'package:crypto_app/public_providers/config/update_bloc_base_state.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter/foundation.dart';
 import '../../../services/service_repositories/authentication_reponsitiory_firebase.dart';
 import '../../../shared_customization/data/screen_value.dart';
 
@@ -41,7 +42,10 @@ class RegisterScreenCubit extends Cubit<RegisterScreenState> with UpdateBlocBase
         password: state.password ?? '',
         firstName: state.firstName ?? '',
         lastName: state.lastName ?? '',
+        role: 'user', // Explicitly set default role
       );
+
+      debugPrint("DEBUG: User registered successfully - Email: ${state.email}, Role: user");
 
       // Cập nhật trạng thái thành công
       emit(state.copyWith(
@@ -50,10 +54,25 @@ class RegisterScreenCubit extends Cubit<RegisterScreenState> with UpdateBlocBase
         status: ScreenValue.success(),
       ));
     } catch (e) {
+      debugPrint("DEBUG: Registration error - $e");
+
       // Xử lý lỗi khi đăng ký thất bại
+      String errorMessage;
+      if (e.toString().contains('email-already-in-use')) {
+        errorMessage = 'Email này đã được sử dụng.';
+      } else if (e.toString().contains('weak-password')) {
+        errorMessage = 'Mật khẩu quá yếu. Vui lòng chọn mật khẩu mạnh hơn.';
+      } else if (e.toString().contains('invalid-email')) {
+        errorMessage = 'Email không hợp lệ.';
+      } else if (e.toString().contains('invalid-credential')) {
+        errorMessage = 'Thông tin đăng ký không hợp lệ. Vui lòng kiểm tra lại.';
+      } else {
+        errorMessage = 'Lỗi đăng ký: ${e.toString()}';
+      }
+
       emit(state.copyWith(
         isLoading: false,
-        errorMessage: e.toString(),
+        errorMessage: errorMessage,
         status: ScreenValue.failed(),
       ));
     }

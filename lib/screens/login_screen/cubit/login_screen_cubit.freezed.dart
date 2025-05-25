@@ -202,7 +202,7 @@ class __$$InitialImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$InitialImpl implements _Initial {
+class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   const _$InitialImpl(
       {this.errorMessage,
       this.status,
@@ -225,8 +225,21 @@ class _$InitialImpl implements _Initial {
   final bool? isLoggedIn;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'LoginScreenState.initial(errorMessage: $errorMessage, status: $status, isLoading: $isLoading, email: $email, password: $password, isLoggedIn: $isLoggedIn)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'LoginScreenState.initial'))
+      ..add(DiagnosticsProperty('errorMessage', errorMessage))
+      ..add(DiagnosticsProperty('status', status))
+      ..add(DiagnosticsProperty('isLoading', isLoading))
+      ..add(DiagnosticsProperty('email', email))
+      ..add(DiagnosticsProperty('password', password))
+      ..add(DiagnosticsProperty('isLoggedIn', isLoggedIn));
   }
 
   @override

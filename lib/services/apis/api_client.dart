@@ -104,4 +104,14 @@ abstract class ApiClient {
       );
 
 
+
+
+  ///
+  /// News Crypto
+  ///
+  @GET('language={languageCode}&q={cate}')
+  Future<dynamic> getListNews(
+      @Path('languageCode') String? languageCode,
+      @Path('cate') String? cate
+      );
 }

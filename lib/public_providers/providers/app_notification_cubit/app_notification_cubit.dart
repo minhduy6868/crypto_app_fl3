@@ -10,4 +10,11 @@ part 'app_notification_cubit.freezed.dart';
 class AppNotificationCubit extends Cubit<AppNotificationState>
     with UpdateState<AppNotificationState> {
   AppNotificationCubit() : super(const AppNotificationState.initial());
+
+
+
+
+
+
+
 }

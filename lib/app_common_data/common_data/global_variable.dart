@@ -40,4 +40,5 @@ final DEFAUT_BOX_SHADOWN = BoxShadow(
 ///
 ///
 ApiClient apis = ApiClient(AppDio());
+ApiClient apinews = ApiClient(AppDio());
 CustomSharedPreferences sp = CustomSharedPreferences();

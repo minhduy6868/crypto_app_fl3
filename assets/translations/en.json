@@ -1,0 +1,483 @@
+{
+  "CommonAction": {
+    "Close": "Close",
+    "Confirm": "Confirm",
+    "Cancel": "Cancel",
+    "Skip": "Skip",
+    "Back": "Back",
+    "Continue": "Continue",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "Update": "Update",
+    "Resend": "Resend",
+    "Submit": "Submit",
+    "Copy": "Copy",
+    "Copied": "Copied",
+    "CopyLink": "Copy Link",
+    "Search": "Search",
+    "Sending": "Sending",
+    "EnterText": "Enter Text",
+    "Dismiss": "Dismiss",
+    "ViewDetail": "View Details",
+    "Add": "Add",
+    "Download": "Download",
+    "Login": "Login",
+    "Register": "Register",
+    "Logout": "Logout",
+    "ShowMore": "Show More",
+    "ShowLess": "Show Less"
+  },
+
+  "CommonData": {
+    "Menu": "Menu",
+    "Account": "Account",
+    "Setting": "Settings",
+    "Email": "Email Address",
+    "Password": "Password",
+    "NotUpdate": "Not Updated",
+    "Today": "Today",
+    "Yesterday": "Yesterday",
+    "Now": "Just Now",
+    "Minute": "{} minutes",
+    "Hour": "{} hours",
+    "Day": "{} days",
+    "Week": "{} weeks",
+    "Month": "{} months",
+    "Year": "{} years",
+    "TimeToday": "{} today",
+    "TimeYesterday": "{} yesterday",
+    "To": "To: {}",
+    "Error": "Error",
+    "UploadAFile": "Upload a Document",
+    "SelectImageOrVideo": "Select Image or Video",
+    "TakeAPhoto": "Take a Photo",
+    "UploadFrom": "Select Upload Source",
+    "LoadingMore": "Loading",
+    "JapanCurrency": "Yen",
+    "Gallery": "Gallery",
+    "GetBackWithoutSaveConfirm": "Current data has not been saved. Do you want to continue?",
+    "ListDataIsEmpty": "No Data Available",
+    "HasErrorOccurr": "An Error Has Occurred",
+    "CantLoadData": "Unable to Load Data",
+    "PleaseFillFullInfo": "Please Fill in All Information!",
+    "About": "About",
+    "FeaturePending": "This Feature Is Under Development",
+    "Currency": "VND",
+    "Male": "Male",
+    "Female": "Female",
+    "OtherGender": "Other Gender"
+  },
+
+  "CommonNotiAction": {
+    "Success": "Success",
+    "YourActionMakingSuccessfully": "Your Action Was Completed Successfully!",
+    "Failed": "Failed",
+    "YourActionMakingFailed": "Your Action Was Not Completed Successfully!",
+    "DownloadFile": "Are You Sure You Want to Download This File?",
+    "DownloadFileSuccessfully": "File ({filename}) Downloaded Successfully!"
+  },
+
+  "CommonValidation": {
+    "InvalidEmailFormat": "Invalid Email Format.",
+    "EmailAlreadyInUse": "This Email Address Is Already in Use.",
+    "InvalidPasswordFormat": "Your Password Must Contain at Least 8 Characters, 1 Number, 1 Uppercase Letter, 1 Lowercase Letter.",
+    "PasswordConfirmationNotMatch": "Password Confirmation Does Not Match.",
+    "NewPasswordConfirmationNotMatch": "New Password Confirmation Does Not Match.",
+    "NewPasswordCanNotSameOldPassword": "New Password Cannot Be the Same as the Old Password.",
+    "MaxLength": "{fieldName} Cannot Exceed {value} Characters.",
+    "MinLength": "{fieldName} Must Contain at Least {value} Characters.",
+    "MaxValue": "{fieldName} Cannot Exceed {value}.",
+    "MinValue": "{fieldName} Cannot Be Less Than {value}.",
+    "Required": "{fieldName} Is Required.",
+    "CommonRequired": "This Field Is Required.",
+    "FieldInvalidate": "{fieldName} Is Not in the Correct Format.",
+    "OnlyNumberAllow": "{fieldName} Can Only Contain Numbers.",
+    "DateTimeFormatIsInvalid": "The Entered Data Does Not Match the Date Format.",
+    "PleaseChooseDifferenceImage": "Please Do Not Select Duplicate Images",
+    "FileSizeMustLessThan10MB": "File Size Must Not Exceed 10MB.",
+    "ListFileHasOneOrMoreFileSizeBiggerThan10MB": "The Selected File List Contains One or More Files Larger Than 10MB, These Files Will Be Removed.",
+    "ImageSizeMustLessThan10MB": "Image Size Must Not Exceed 10MB.",
+    "TotalFileSizeMustLessThan10MB": "Total File Size Must Not Exceed 10MB.",
+    "TotalImageSizeMustLessThan10MB": "Total Image Size Must Not Exceed 10MB."
+  },
+
+  "Login": {
+    "AppName": "",
+    "Email": "Email Address",
+    "InputEmail": "Enter Your Email Address",
+    "Password": "Password",
+    "InputPassword": "Enter Password",
+    "KeepLogin": "Keep Me Logged In",
+    "ForgotPassword": "Forgot Password?",
+    "Login": "Login",
+    "NotHaveAccount": "Don't Have an Account?",
+    "Register": "Register Here",
+    "Contact": "Contact",
+    "EULA": "End User License Agreement",
+    "AccountNotActive": "Your Account Has Not Been Activated",
+    "ActiveAccountSuccessTitle": "Activation Successful",
+    "ActiveAccountSuccessContent": "Your Account Has Been Successfully Activated. Please Log In to Continue Using the System.",
+    "LoginByAdminAccount": "Your Account Is an Admin Account and Can Only Be Logged in on the Website",
+    "LoginFailedTitle": "Login Failed",
+    "AccountAlreadyActivated": "Your Account Has Already Been Activated.",
+    "SessionTimeOutTitle": "Session Expired",
+    "SessionTimeOutContent": "Your Login Session Has Expired. Please Log In Again to Continue Using the System or Contact Us If There Is an Error.",
+    "LoginErrorTitle": "Error",
+    "LoginDescription": "Agree to Our {privacy_policy} & {term_of_service}"
+  },
+
+  "Register": {
+    "Register": "Register",
+    "Submit": "Register",
+    "Name": "Full Name",
+    "NamePlaceHolder": "Please Enter Your Full Name",
+    "Email": "Email Address",
+    "EmailPlaceHolder": "Please Enter Your Email Address",
+    "Password": "Password",
+    "PasswordPlaceHolder": "Please Enter Your Password",
+    "ConfirmPassword": "Confirm Password",
+    "ConfirmPasswordPlaceHolder": "Please Enter Password Confirmation",
+    "DoYouHaveAccount": "Already Have an Account?",
+    "LoginHere": "Login Here",
+    "CheckYourEmailTitle": "Check Your Inbox",
+    "CheckYourEmailContent": "A Verification Email Has Been Sent to {email}. Please Check Your Inbox and Click the Link to Complete Your Account Registration.",
+    "CheckSpamContent": "If You Don't See the Email, Please Check Your Spam Folder or Resend",
+    "Resend": "Resend",
+    "GoBack": "Return to Homepage",
+    "ResendAfter30Seconds": "Resend After 30 Seconds",
+    "RegisterSuccessTitle": "Success",
+    "RegisterSuccessContent": "Account Registration Successful. Please Check Your Inbox or Spam Folder to Verify Your Account and Start Using the System."
+  },
+
+  "ResetPassword": {
+    "ForgotPassword": "Forgot Password",
+    "ResetPassword": "Reset Password",
+    "EmailAddress": "Email Address",
+    "EmailPlaceHolder": "Enter Email Address",
+    "ResetPasswordSuccessTitle": "Success",
+    "ResetPasswordSuccessContent": "Please Check Your Inbox or Spam Folder."
+  },
+
+  "ChangePassword": {
+    "ChangePassword": "Change Password",
+    "CurrentPassword": "Current Password",
+    "CurrentPasswordPlaceHolder": "Enter Current Password",
+    "NewPassword": "New Password",
+    "NewPasswordPlaceHolder": "Enter New Password",
+    "NewConfirmPassword": "Confirm New Password",
+    "NewConfirmPasswordPlaceHolder": "Re-enter New Password",
+    "KeepLoginConfirmTitle": "Password Changed",
+    "KeepLoginConfirm": "Do You Want to Stay Logged In on Other Devices?",
+    "LogoutAllDevices": "Log Out from All Devices Where You Are Logged In to This Account.",
+    "KeepLogin": "Stay Logged In.",
+    "Submit": "Confirm",
+    "ChangePasswordSuccessTitle": "Password Changed",
+    "ChangePasswordSuccessContent": "You Have Successfully Changed Your Password. Please Log In to Continue Using the System"
+  },
+
+  "ConfirmForgotPassword": {
+    "ResetPassword": "Recover Password",
+    "NewPassword": "New Password",
+    "NewPasswordPlaceHolder": "Enter New Password",
+    "NewConfirmPassword": "Confirm New Password",
+    "NewConfirmPasswordPlaceHolder": "Re-enter New Password",
+    "Update": "Confirm Change",
+    "ResetPasswordSuccessTitle": "Success",
+    "ResetPasswordSuccessContent": "Password Has Been Successfully Changed. Please Log In Again to Use the System.",
+    "ResetPasswordFailureTitle": "Error",
+    "ResetPasswordFailureContent": "Password Reset Failed."
+  },
+
+  "ResendEmail": {
+    "EmailSentDescription1": "A Confirmation Email Has Been Sent to {email}. Click the Link to Complete Your Account Registration.",
+    "EmailSentDescription2": "If You Did Not Receive the Confirmation Email or Lost It, Please Resend the Email Below.",
+    "EmailSent": "Confirmation Email Sent",
+    "ResendEmail": "Resend Email",
+    "PleaseRequestAfter30Seconds": "Please Resend After {time} Seconds",
+    "GetBackHome": "Return to Homepage",
+    "ResendEmailFailed": "Failed to Resend Email",
+    "ConfirmEmail": "Confirm Email",
+    "ResendEmailSuccessfully": "Email Sent Successfully"
+  },
+
+  "LandingPage": {
+    "LandingPage": "LandingPage"
+  },
+
+  "MainTab": {
+    "MainTab": "MainTab"
+  },
+
+  "Notification": {
+    "Notification": "Notification"
+  },
+
+  "DeleteAccount": {
+    "DeleteAccount": "DeleteAccount"
+  },
+
+  "Placeholder": {
+    "InputFieldPlaceholder": "Enter {fieldName}",
+    "SelectFieldPlaceholder": "Select {fieldName}",
+    "DateTimeFieldPlaceholder": "Select Date",
+    "SearchPlaceHolder": "Search {fieldName}",
+    "UploadFilePlaceHolder": "Select File"
+  },
+
+  "Permission": {
+    "NotAnyVisibleCamera": "No Camera Available",
+    "PleaseAcceptCameraPermission": "Please Allow Access to the Device's Camera",
+    "CameraPermissionPurpose": "The App Uses the Device's Camera to Take Photos",
+    "No": "No",
+    "Yes": "Agree",
+    "GalleryPermissionPurpose": "The App Uses Photos from the Gallery",
+    "CanNotAccessGalleryPermission": "Cannot Access the Gallery Due to Permission Denial",
+    "PleaseAccessGalleryPermission": "Please Allow Access to the Photo Gallery"
+  },
+
+  "LostConnection": {
+    "LostConnection": "Lost Connection",
+    "PleaseCheckConnection": "Please Check Your Network Connection or Try Again.",
+    "Retry": "Reconnect"
+  },
+
+  "TermOfService": {
+    "TermOfService": "Terms of Service"
+  },
+
+  "PrivacyPolicy": {
+    "PrivacyPolicy": "Privacy Policy"
+  },
+
+  "SystemError": {
+    "SystemErrorTitle": "Sorry",
+    "SystemErrorContent": "The System Is Under Maintenance."
+  },
+
+  "AppUpdate": {
+    "NewUpdateIsAvailable": "A New Update Is Available",
+    "ThisVerionIsNotSupported": "The Current Version of This App Is No Longer Supported.",
+    "Update": "Update",
+    "UpdateDescription": "We Have Added Many Features and Fixed Some Bugs to Make Your Experience as Smooth as Possible.",
+    "Skip": "Skip"
+  },
+
+  "Error": {
+    "UnexpectedError": "An Unexpected Error Has Occurred.",
+    "SendTimeoutError": "A Send Timeout Error Occurred When Connecting to the API Server.",
+    "ConnectionTimeoutError": "Connection to the API Server Timed Out.",
+    "CancalledApiError": "The Request to the API Server Was Canceled.",
+    "ConnectionError": "Connection to the API Server Failed Due to Internet Connection.",
+    "ReceiveTimeoutError": "Receive Timeout Error When Connecting to the API Server."
+  },
+  "HomeScreen": {
+    "Top7Coins": "Top 7 Coins",
+    "Top5Exchanges": "Top 5 Exchanges",
+    "GoodMorning": "Good Morning!",
+    "Welcome": "Welcome!",
+    "ExploreMarket": "Let's Explore the Market!",
+    "SearchCoins": "Search Coins...",
+    "SeeAll": "See All",
+    "NoCoinsFound": "No coins found for '%s'",
+    "SearchResults": "Search Results",
+    "NoCoinsAvailable": "No Coins Available",
+    "NoExchangesAvailable": "No Exchanges Available",
+    "Unknown": "Unknown",
+    "Vol24h": "24h Volume",
+    "PopularCoins": "Popular Coins",
+    "FavoriteCoins": "Favorite Coins",
+    "FAQ": "FAQ",
+    "About": "About",
+    "Convert": "Convert",
+    "Report": "Report",
+    "Settings": "Settings",
+    "LoginToFavorite": "Please log in to add to favorites"
+  },
+  "AccountScreen": {
+    "Security": "Security",
+    "SecurityOptions": "Security Options",
+    "ChangePassword": "Change Password",
+    "ResetPasswordViaEmail": "Reset Password via Email",
+    "DeleteAccount": "Delete Account",
+    "EditName": "Edit Name",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "Save": "Save",
+    "EnterNewPassword": "Enter New Password"
+  },
+
+  "DetailCoinScreen": {
+    "AIPrediction": "AI Prediction",
+    "Refresh": "Refresh",
+    "ChartData": "Chart Data",
+    "PricePrediction": "Price Prediction",
+    "ShowLess": "Show Less",
+    "ReadMore": "Read More",
+    "1D": "1 Day",
+    "1W": "1 Week",
+    "1M": "1 Month",
+    "3M": "3 Months",
+    "6M": "6 Months",
+    "1Y": "1 Year"
+  },
+
+  "DetailExchangeScreen": {
+    "ExchangeDetails": "Exchange Details",
+    "About": "About",
+    "VisitWebsite": "Visit Website",
+    "TrustScore": "Trust Score",
+    "Year": "Established Year",
+    "Volume": "Volume",
+    "Score": "Score",
+    "NoDescriptionAvailable": "No Description Available"
+  },
+
+  "DrawerScreen": {
+    "LogOut": "Log Out"
+  },
+
+  "GgAddScreen": {
+    "GoBack": "Go Back"
+  },
+
+  "MenuBarComponent": {
+    "FAQ": "FAQ",
+    "About": "About",
+    "Convert": "Convert",
+    "Report": "Report"
+  },
+
+  "NewsCard": {
+    "NoTitle": "No Title"
+  },
+
+  "ListNewsScreen": {
+    "CryptoNews": "Crypto News",
+    "Loading": "Loading...",
+    "NoNewsAvailable": "No news available",
+    "TryAgain": "Try Again",
+    "NewsDetail": "News Detail",
+    "AIEvaluation": "Evaluate with AI",
+    "ReadOriginal": "Read Original Article",
+    "NoLinkAvailable": "No link available",
+    "FailedToOpenLink": "Failed to open the link",
+    "SearchExchanges": "Search Exchanges...",
+    "SearchCoins": "Search Coins...",
+    "All": "All",
+    "Increasing": "Increasing",
+    "Decreasing": "Decreasing",
+    "NoCoinsFound": "No coins found for '%s'",
+    "NoExchangesFound": "No exchanges found for '%s'"
+  },
+  "FavoriteNewsScreen": {
+    "Title": "Favorite News",
+    "NoFavorites": "No favorite news yet"
+  },
+  "FavoriteCoinsScreen": {
+    "title": "Favorite Coins",
+    "empty_state": "No favorite coins available",
+    "login_required": "Please log in to add coins"
+  },
+
+
+
+  "LoginScreen": {
+    "Login": "Login",
+    "Email": "Email",
+    "Password": "Password",
+    "ForgotPassword": "Forgot Password",
+    "NoAccount": "Don't Have an Account?",
+    "Register": "Register",
+    "LoginSuccess": "Login Successful!",
+    "LoginError": "Error: %s"
+  },
+
+  "RegisterScreen": {
+    "Register": "Register",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "ConfirmPassword": "Confirm Password",
+    "RegisterSuccess": "Registration Successful! Please Log In.",
+    "RegisterError": "Registration Failed! Please Try Again.",
+    "AlreadyHaveAccount": "Already Have an Account?"
+  },
+
+  "MainScreen": {
+    "Coins": "Coins",
+    "Exchanges": "Exchanges"
+  },
+
+  "SettingScreen": {
+    "Settings": "Settings",
+    "Language": "Language",
+    "English": "English",
+    "Vietnamese": "Vietnamese",
+    "Japanese": "Japanese",
+    "FontSize": "Font Size",
+    "Theme": "Theme",
+    "ChangeLanguageSuccess": "Language Changed Successfully",
+    "ChangeLanguageFailed": "Failed to Change Language"
+  },
+
+  "ViewAllListScreen": {
+    "RecentTransactions": "Recent Transactions",
+    "NoTransactionsYet": "No Transactions Yet",
+    "TransactionsWillAppearHere": "Transactions Will Appear Here",
+    "SentETH": "Sent ETH",
+    "ReceivedETH": "Received ETH",
+    "UnknownDate": "Unknown Date"
+  },
+  "WalletScreen": {
+    "TotalBalance": "Total Balance",
+    "AvailableBalance": "Available Balance",
+    "NoWalletFound": "No Wallet Found",
+    "CreateWalletPrompt": "Please Create a New Wallet to Use Crypto",
+    "CreateWallet": "Create Wallet",
+    "Send": "Send",
+    "Receive": "Receive",
+    "Swap": "Swap",
+    "Warning": "Warning",
+    "PrivateKeyWarning": "Your Private Key Gives Full Access to Your Wallet. Never Share It with Anyone!",
+    "Cancel": "Cancel",
+    "IUnderstand": "I Understand",
+    "YourPrivateKey": "Your Private Key",
+    "Copy": "Copy",
+    "Close": "Close",
+    "SendEthereum": "Send Ethereum",
+    "RecipientAddress": "Recipient Address",
+    "AmountETH": "Amount (ETH)",
+    "Balance": "Balance: %s ETH",
+    "InvalidAmount": "Please Enter a Valid Amount of ETH",
+    "InsufficientBalance": "Insufficient Balance",
+    "InvalidAddress": "Please Enter a Valid Ethereum Address",
+    "AddressCopied": "Address Copied",
+    "PrivateKeyCopied": "Private Key Copied",
+    "RefreshBalance": "Refresh Balance",
+    "ViewPrivateKey": "View Private Key",
+    "BackupWallet": "Backup Wallet",
+    "WalletSettings": "Wallet Settings",
+    "RecentTransactions": "Recent Transactions",
+    "SentETH": "Sent ETH",
+    "ReceivedETH": "Received ETH",
+    "NoTransactionsYet": "No Transactions Yet",
+    "TransactionsPrompt": "Your transactions will appear here",
+    "EnterAddressManually": "Enter Address Manually",
+    "Loading": "Loading...",
+    "UnknownDate": "Unknown date",
+    "NoAddressAvailable": "No address available",
+    "NoPrivateKeyAvailable": "No private key available",
+    "ScanToReceive": "Scan to receive",
+    "MyWalletAddress": "My Wallet Address"
+  },
+  "WelcomeScreen": {
+    "GetStarted": "Get Started",
+    "Back": "Back",
+    "Next": "Next"
+  },
+
+  "BlocBaseScreen": {
+    "SuccessNotification": "Action Successful",
+    "ErrorNotification": "An Error Occurred"
+  }
+
+}

@@ -22,6 +22,10 @@ mixin _$ViewAllListScreenState {
   CoinMarket? get coins => throw _privateConstructorUsedError;
   List<Exchange>? get listExchange => throw _privateConstructorUsedError;
   Exchange? get exchange => throw _privateConstructorUsedError;
+  List<CoinMarket> get filteredCoins => throw _privateConstructorUsedError;
+  List<Exchange> get filteredExchanges => throw _privateConstructorUsedError;
+  String get searchQuery => throw _privateConstructorUsedError;
+  PriceFilter get priceFilter => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
@@ -30,7 +34,11 @@ mixin _$ViewAllListScreenState {
             List<CoinMarket>? listcoinMarket,
             CoinMarket? coins,
             List<Exchange>? listExchange,
-            Exchange? exchange)
+            Exchange? exchange,
+            List<CoinMarket> filteredCoins,
+            List<Exchange> filteredExchanges,
+            String searchQuery,
+            PriceFilter priceFilter)
         initial,
   }) =>
       throw _privateConstructorUsedError;
@@ -42,7 +50,11 @@ mixin _$ViewAllListScreenState {
             List<CoinMarket>? listcoinMarket,
             CoinMarket? coins,
             List<Exchange>? listExchange,
-            Exchange? exchange)?
+            Exchange? exchange,
+            List<CoinMarket> filteredCoins,
+            List<Exchange> filteredExchanges,
+            String searchQuery,
+            PriceFilter priceFilter)?
         initial,
   }) =>
       throw _privateConstructorUsedError;
@@ -54,7 +66,11 @@ mixin _$ViewAllListScreenState {
             List<CoinMarket>? listcoinMarket,
             CoinMarket? coins,
             List<Exchange>? listExchange,
-            Exchange? exchange)?
+            Exchange? exchange,
+            List<CoinMarket> filteredCoins,
+            List<Exchange> filteredExchanges,
+            String searchQuery,
+            PriceFilter priceFilter)?
         initial,
     required TResult orElse(),
   }) =>
@@ -95,7 +111,11 @@ abstract class $ViewAllListScreenStateCopyWith<$Res> {
       List<CoinMarket>? listcoinMarket,
       CoinMarket? coins,
       List<Exchange>? listExchange,
-      Exchange? exchange});
+      Exchange? exchange,
+      List<CoinMarket> filteredCoins,
+      List<Exchange> filteredExchanges,
+      String searchQuery,
+      PriceFilter priceFilter});
 
   $CoinMarketCopyWith<$Res>? get coins;
   $ExchangeCopyWith<$Res>? get exchange;
@@ -123,6 +143,10 @@ class _$ViewAllListScreenStateCopyWithImpl<$Res,
     Object? coins = freezed,
     Object? listExchange = freezed,
     Object? exchange = freezed,
+    Object? filteredCoins = null,
+    Object? filteredExchanges = null,
+    Object? searchQuery = null,
+    Object? priceFilter = null,
   }) {
     return _then(_value.copyWith(
       errorMessage: freezed == errorMessage
@@ -149,6 +173,22 @@ class _$ViewAllListScreenStateCopyWithImpl<$Res,
           ? _value.exchange
           : exchange // ignore: cast_nullable_to_non_nullable
               as Exchange?,
+      filteredCoins: null == filteredCoins
+          ? _value.filteredCoins
+          : filteredCoins // ignore: cast_nullable_to_non_nullable
+              as List<CoinMarket>,
+      filteredExchanges: null == filteredExchanges
+          ? _value.filteredExchanges
+          : filteredExchanges // ignore: cast_nullable_to_non_nullable
+              as List<Exchange>,
+      searchQuery: null == searchQuery
+          ? _value.searchQuery
+          : searchQuery // ignore: cast_nullable_to_non_nullable
+              as String,
+      priceFilter: null == priceFilter
+          ? _value.priceFilter
+          : priceFilter // ignore: cast_nullable_to_non_nullable
+              as PriceFilter,
     ) as $Val);
   }
 
@@ -195,7 +235,11 @@ abstract class _$$InitialImplCopyWith<$Res>
       List<CoinMarket>? listcoinMarket,
       CoinMarket? coins,
       List<Exchange>? listExchange,
-      Exchange? exchange});
+      Exchange? exchange,
+      List<CoinMarket> filteredCoins,
+      List<Exchange> filteredExchanges,
+      String searchQuery,
+      PriceFilter priceFilter});
 
   @override
   $CoinMarketCopyWith<$Res>? get coins;
@@ -222,6 +266,10 @@ class __$$InitialImplCopyWithImpl<$Res>
     Object? coins = freezed,
     Object? listExchange = freezed,
     Object? exchange = freezed,
+    Object? filteredCoins = null,
+    Object? filteredExchanges = null,
+    Object? searchQuery = null,
+    Object? priceFilter = null,
   }) {
     return _then(_$InitialImpl(
       errorMessage: freezed == errorMessage
@@ -248,6 +296,22 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value.exchange
           : exchange // ignore: cast_nullable_to_non_nullable
               as Exchange?,
+      filteredCoins: null == filteredCoins
+          ? _value._filteredCoins
+          : filteredCoins // ignore: cast_nullable_to_non_nullable
+              as List<CoinMarket>,
+      filteredExchanges: null == filteredExchanges
+          ? _value._filteredExchanges
+          : filteredExchanges // ignore: cast_nullable_to_non_nullable
+              as List<Exchange>,
+      searchQuery: null == searchQuery
+          ? _value.searchQuery
+          : searchQuery // ignore: cast_nullable_to_non_nullable
+              as String,
+      priceFilter: null == priceFilter
+          ? _value.priceFilter
+          : priceFilter // ignore: cast_nullable_to_non_nullable
+              as PriceFilter,
     ));
   }
 }
@@ -261,9 +325,15 @@ class _$InitialImpl implements _Initial {
       final List<CoinMarket>? listcoinMarket,
       this.coins,
       final List<Exchange>? listExchange,
-      this.exchange})
+      this.exchange,
+      final List<CoinMarket> filteredCoins = const [],
+      final List<Exchange> filteredExchanges = const [],
+      this.searchQuery = '',
+      this.priceFilter = PriceFilter.all})
       : _listcoinMarket = listcoinMarket,
-        _listExchange = listExchange;
+        _listExchange = listExchange,
+        _filteredCoins = filteredCoins,
+        _filteredExchanges = filteredExchanges;
 
   @override
   final String? errorMessage;
@@ -293,10 +363,35 @@ class _$InitialImpl implements _Initial {
 
   @override
   final Exchange? exchange;
+  final List<CoinMarket> _filteredCoins;
+  @override
+  @JsonKey()
+  List<CoinMarket> get filteredCoins {
+    if (_filteredCoins is EqualUnmodifiableListView) return _filteredCoins;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_filteredCoins);
+  }
+
+  final List<Exchange> _filteredExchanges;
+  @override
+  @JsonKey()
+  List<Exchange> get filteredExchanges {
+    if (_filteredExchanges is EqualUnmodifiableListView)
+      return _filteredExchanges;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_filteredExchanges);
+  }
+
+  @override
+  @JsonKey()
+  final String searchQuery;
+  @override
+  @JsonKey()
+  final PriceFilter priceFilter;
 
   @override
   String toString() {
-    return 'ViewAllListScreenState.initial(errorMessage: $errorMessage, status: $status, listcoinMarket: $listcoinMarket, coins: $coins, listExchange: $listExchange, exchange: $exchange)';
+    return 'ViewAllListScreenState.initial(errorMessage: $errorMessage, status: $status, listcoinMarket: $listcoinMarket, coins: $coins, listExchange: $listExchange, exchange: $exchange, filteredCoins: $filteredCoins, filteredExchanges: $filteredExchanges, searchQuery: $searchQuery, priceFilter: $priceFilter)';
   }
 
   @override
@@ -313,7 +408,15 @@ class _$InitialImpl implements _Initial {
             const DeepCollectionEquality()
                 .equals(other._listExchange, _listExchange) &&
             (identical(other.exchange, exchange) ||
-                other.exchange == exchange));
+                other.exchange == exchange) &&
+            const DeepCollectionEquality()
+                .equals(other._filteredCoins, _filteredCoins) &&
+            const DeepCollectionEquality()
+                .equals(other._filteredExchanges, _filteredExchanges) &&
+            (identical(other.searchQuery, searchQuery) ||
+                other.searchQuery == searchQuery) &&
+            (identical(other.priceFilter, priceFilter) ||
+                other.priceFilter == priceFilter));
   }
 
   @override
@@ -324,7 +427,11 @@ class _$InitialImpl implements _Initial {
       const DeepCollectionEquality().hash(_listcoinMarket),
       coins,
       const DeepCollectionEquality().hash(_listExchange),
-      exchange);
+      exchange,
+      const DeepCollectionEquality().hash(_filteredCoins),
+      const DeepCollectionEquality().hash(_filteredExchanges),
+      searchQuery,
+      priceFilter);
 
   /// Create a copy of ViewAllListScreenState
   /// with the given fields replaced by the non-null parameter values.
@@ -343,11 +450,15 @@ class _$InitialImpl implements _Initial {
             List<CoinMarket>? listcoinMarket,
             CoinMarket? coins,
             List<Exchange>? listExchange,
-            Exchange? exchange)
+            Exchange? exchange,
+            List<CoinMarket> filteredCoins,
+            List<Exchange> filteredExchanges,
+            String searchQuery,
+            PriceFilter priceFilter)
         initial,
   }) {
-    return initial(
-        errorMessage, status, listcoinMarket, coins, listExchange, exchange);
+    return initial(errorMessage, status, listcoinMarket, coins, listExchange,
+        exchange, filteredCoins, filteredExchanges, searchQuery, priceFilter);
   }
 
   @override
@@ -359,11 +470,24 @@ class _$InitialImpl implements _Initial {
             List<CoinMarket>? listcoinMarket,
             CoinMarket? coins,
             List<Exchange>? listExchange,
-            Exchange? exchange)?
+            Exchange? exchange,
+            List<CoinMarket> filteredCoins,
+            List<Exchange> filteredExchanges,
+            String searchQuery,
+            PriceFilter priceFilter)?
         initial,
   }) {
     return initial?.call(
-        errorMessage, status, listcoinMarket, coins, listExchange, exchange);
+        errorMessage,
+        status,
+        listcoinMarket,
+        coins,
+        listExchange,
+        exchange,
+        filteredCoins,
+        filteredExchanges,
+        searchQuery,
+        priceFilter);
   }
 
   @override
@@ -375,13 +499,17 @@ class _$InitialImpl implements _Initial {
             List<CoinMarket>? listcoinMarket,
             CoinMarket? coins,
             List<Exchange>? listExchange,
-            Exchange? exchange)?
+            Exchange? exchange,
+            List<CoinMarket> filteredCoins,
+            List<Exchange> filteredExchanges,
+            String searchQuery,
+            PriceFilter priceFilter)?
         initial,
     required TResult orElse(),
   }) {
     if (initial != null) {
-      return initial(
-          errorMessage, status, listcoinMarket, coins, listExchange, exchange);
+      return initial(errorMessage, status, listcoinMarket, coins, listExchange,
+          exchange, filteredCoins, filteredExchanges, searchQuery, priceFilter);
     }
     return orElse();
   }
@@ -422,7 +550,11 @@ abstract class _Initial implements ViewAllListScreenState {
       final List<CoinMarket>? listcoinMarket,
       final CoinMarket? coins,
       final List<Exchange>? listExchange,
-      final Exchange? exchange}) = _$InitialImpl;
+      final Exchange? exchange,
+      final List<CoinMarket> filteredCoins,
+      final List<Exchange> filteredExchanges,
+      final String searchQuery,
+      final PriceFilter priceFilter}) = _$InitialImpl;
 
   @override
   String? get errorMessage;
@@ -436,6 +568,14 @@ abstract class _Initial implements ViewAllListScreenState {
   List<Exchange>? get listExchange;
   @override
   Exchange? get exchange;
+  @override
+  List<CoinMarket> get filteredCoins;
+  @override
+  List<Exchange> get filteredExchanges;
+  @override
+  String get searchQuery;
+  @override
+  PriceFilter get priceFilter;
 
   /// Create a copy of ViewAllListScreenState
   /// with the given fields replaced by the non-null parameter values.
